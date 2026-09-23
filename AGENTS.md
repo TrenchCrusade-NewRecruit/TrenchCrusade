@@ -37,6 +37,26 @@ Use `rg` to search exact names and stable identifiers before editing.
 
 Preserve existing IDs and imports unless the change genuinely requires a new object. Rules are commonly enforced by `entryLink`, `constraint`, `modifier`, and `condition` elements rather than the displayed item name.
 
+## Rule-change and issue verification
+
+Apply this process before either changing roster data/legality or filing an issue about it.
+
+1. Prove the rule is current.
+   - Search the current official rulebook or warband PDF for the exact unit, variant, or rule.
+   - Record the source URL, rulebook version, and page number in the change notes or issue body.
+   - Treat old issues, catalogue text, community resources, and superseded PDFs as historical context only; they are never rule authority.
+   - If the current official source does not contain the claimed rule, do not implement or report the old behaviour as missing. Determine instead whether obsolete catalogue data must be removed.
+
+2. Prove the catalogue behaviour.
+   - Locate the exact XML object(s) and the `entryLink`, `constraint`, `modifier`, or `condition` responsible for the result.
+   - Reproduce the behaviour in the current New Recruit release whenever practical. Do not infer runtime behaviour solely from displayed descriptions, old reports, or the apparent absence of an XML object.
+   - Test both the smallest legal case and the closest case that should fail.
+
+3. Act only with both proofs.
+   - For a code change, preserve a concise record of the official source and the before/after validation.
+   - For an issue, include the official source, reproduction steps, observed behaviour, expected behaviour, and any old issue links as historical references.
+   - Deduplicate by root cause: group reports that stem from the same rule or XML implementation, and search the target repository's existing issues before filing.
+
 ## Validation and pull requests
 
 - Keep each rule fix narrowly scoped and independently reviewable.
