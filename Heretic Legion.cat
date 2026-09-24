@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="26" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="27" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -2497,6 +2497,11 @@ Due to the torrent of flame, sulphur and detritus surrounding the Matriarch whil
                 <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Sacrificial Blade" hidden="true" id="fb9b-102a-0477-c7fc" type="selectionEntry" targetId="8a11-d2f8-755a-3cc9" sortIndex="5">
@@ -2574,6 +2579,11 @@ Due to the torrent of flame, sulphur and detritus surrounding the Matriarch whil
             <modifier type="replace" value="+2 INJURY DICE" field="8cd6-8018-f2da-5ede" affects="profiles.Weapon" join="," arg="+1 INJURY DICE">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="b0b0-1549-d4ec-7b5f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3269,6 +3279,11 @@ Due to the torrent of flame, sulphur and detritus surrounding the Matriarch whil
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="f7c8-82d1-a9cc-36d4" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
             </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </entryLink>
         <entryLink import="true" name="Anti-Materiel Rifle" hidden="false" id="3b88-7bdf-2370-d7e4" type="selectionEntry" targetId="19f3-086f-a5ad-f662" sortIndex="14">
@@ -3297,6 +3312,11 @@ Due to the torrent of flame, sulphur and detritus surrounding the Matriarch whil
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="b0b0-1549-d4ec-7b5f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4267,6 +4287,11 @@ Melee Chassis counts as two one handed melee weapons for the purposes of equippi
               <repeats>
                 <repeat value="1" repeats="1" field="selections" scope="roster" childId="809e-1185-2bed-7b24" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
               </repeats>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="cf02-7a3e-ffbf-d7f9" shared="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
