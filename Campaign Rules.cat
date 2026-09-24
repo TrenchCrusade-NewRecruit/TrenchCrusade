@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Campaign Rules" hidden="false" id="7346-84e3-dbbb-296d" defaultAmount="1">
       <constraints>
@@ -1069,14 +1069,14 @@ The saint guides your troops before each battle. The model with the skull gains 
             <selectionEntryGroup name="Wealthy Acquisition" id="fa14-c95d-76f0-9037" hidden="true" flatten="true">
               <comment>Heretic</comment>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Leveraged on Anti-Material Rifles" hidden="true" id="39f8-37bc-f857-ca21">
+                <selectionEntry type="upgrade" import="true" name="Leveraged on Anti-Materiel Rifles" hidden="true" id="39f8-37bc-f857-ca21">
                   <profiles>
-                    <profile name="Leveraged on Anti-Material Rifles" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="7030-fa22-471a-d8f2">
+                    <profile name="Leveraged on Anti-Materiel Rifles" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="7030-fa22-471a-d8f2">
                       <characteristics>
                         <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
                         <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
                         <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                        <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Your warband can take an additional Anti-Material Rifle.</characteristic>
+                        <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Your warband can take an additional Anti-Materiel Rifle.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6423,14 +6423,14 @@ A Hunter of the Left-Hand Path cannot cast the Oracle Beast Cloak Goetic Spell 
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Entitled to Anti-Material Rifles" hidden="true" id="ad7e-8af4-357c-b8ef">
+            <selectionEntry type="upgrade" import="true" name="Entitled to Anti-Materiel Rifles" hidden="true" id="ad7e-8af4-357c-b8ef">
               <profiles>
-                <profile name="Entitled to Anti-Material Rifles" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="176a-1759-a80c-ea2d">
+                <profile name="Entitled to Anti-Materiel Rifles" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="176a-1759-a80c-ea2d">
                   <characteristics>
                     <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
                     <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
                     <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Your warband can take an additional Anti-Material Rifle.</characteristic>
+                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Your warband can take an additional Anti-Materiel Rifle.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

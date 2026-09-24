@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="8ef4-3a38-8adb-53ba" name="Ranged Weapons" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="8ef4-3a38-8adb-53ba" name="Ranged Weapons" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="16" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Anti-Material Rifle" hidden="false" id="19f3-086f-a5ad-f662">
+    <selectionEntry type="upgrade" import="true" name="Anti-Materiel Rifle" hidden="false" id="19f3-086f-a5ad-f662">
       <profiles>
-        <profile name="Anti-Material Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="037f-15ba-8ef3-332e">
+        <profile name="Anti-Materiel Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="037f-15ba-8ef3-332e">
           <characteristics>
             <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
             <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">36&quot;</characteristic>
