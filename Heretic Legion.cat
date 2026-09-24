@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="25" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="26" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -1061,23 +1061,27 @@
         <selectionEntryGroup name="Equipment" id="bf1a-16c0-f260-9448" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Headgear" hidden="false" id="ef06-1bc2-9427-c550" type="selectionEntryGroup" targetId="0ff3-f218-8676-1288" sortIndex="1"/>
-            <entryLink import="true" name="Gas Mask" hidden="false" id="7ca0-63de-1b38-384a" type="selectionEntry" targetId="8927-946d-c993-14ee" sortIndex="2"/>
-            <entryLink import="true" name="Infernal Brand" hidden="false" id="7655-b5f4-f36d-41b3" type="selectionEntry" targetId="0198-2836-2591-f0ad" sortIndex="3"/>
-            <entryLink import="true" name="Lock of Samson&apos;s Hair" hidden="false" id="2a79-43bf-1b77-a104" type="selectionEntry" targetId="9b61-d0a4-dd30-2d32" sortIndex="11"/>
-            <entryLink import="true" name="Curative Fluids" hidden="true" id="39b7-1bcf-8601-0494" type="selectionEntry" targetId="0e49-dfa5-4190-ee69" sortIndex="10"/>
-            <entryLink import="true" name="Shovel" hidden="false" id="662f-ccc0-3abc-5bc0" type="selectionEntry" targetId="d0a8-ad68-ad47-83f5" sortIndex="4"/>
-            <entryLink import="true" name="Medikit" hidden="false" id="3b6e-8121-f11a-65de" type="selectionEntry" targetId="05b0-3aaa-2e29-c69f" sortIndex="6">
+            <entryLink import="true" name="Gas Mask" hidden="false" id="7ca0-63de-1b38-384a" type="selectionEntry" targetId="8927-946d-c993-14ee" sortIndex="2">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Wind Amulet" hidden="false" id="e321-6436-d2ed-d043" type="selectionEntry" targetId="e89c-c62f-d3e0-6dfc" sortIndex="7">
+            <entryLink import="true" name="Infernal Brand" hidden="false" id="7655-b5f4-f36d-41b3" type="selectionEntry" targetId="0198-2836-2591-f0ad" sortIndex="3">
               <costs>
-                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="1" field="9887-b25b-717e-2cbc"/>
-              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Lock of Samson&apos;s Hair" hidden="false" id="2a79-43bf-1b77-a104" type="selectionEntry" targetId="9b61-d0a4-dd30-2d32" sortIndex="11"/>
+            <entryLink import="true" name="Curative Fluids" hidden="true" id="39b7-1bcf-8601-0494" type="selectionEntry" targetId="0e49-dfa5-4190-ee69" sortIndex="10"/>
+            <entryLink import="true" name="Shovel" hidden="false" id="662f-ccc0-3abc-5bc0" type="selectionEntry" targetId="d0a8-ad68-ad47-83f5" sortIndex="4">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Medikit" hidden="false" id="3b6e-8121-f11a-65de" type="selectionEntry" targetId="05b0-3aaa-2e29-c69f" sortIndex="6">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Field Shrine" hidden="false" id="b632-a2ae-b18a-cf2d" type="selectionEntry" targetId="b8e5-5657-f3fc-fd59" sortIndex="8">
               <constraints>
@@ -1117,7 +1121,7 @@
         <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="6261-b217-6eba-7048" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="2"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="71bf-0c2b-8f27-640e" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="880f-3d04-e7a6-e385" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="1"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="35ad-5260-4667-c149" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="3">
+        <entryLink import="true" name="Weapons" hidden="false" id="35ad-5260-4667-c149" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" defaultAmount="0" sortIndex="3">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="self" shared="true" id="a446-37c8-07e4-476c" includeChildSelections="true"/>
           </constraints>
