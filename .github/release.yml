@@ -1,0 +1,17 @@
+changelog:
+  categories:
+    - title: Roster and rules updates
+      labels:
+        - roster
+        - rules
+        - enhancement
+    - title: Bug fixes
+      labels:
+        - bug
+        - fix
+    - title: Other changes
+      labels:
+        - "*"
+  exclude:
+    labels:
+      - skip-changelog

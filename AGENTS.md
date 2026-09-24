@@ -78,3 +78,17 @@ Apply this process before either changing roster data/legality or filing an issu
 - Record the official rulebook version and page number in the PR description.
 - Parse modified XML and test both the smallest legal case and the case that should fail in New Recruit.
 - Do not include locally downloaded PDFs or other third-party rulebook copies.
+
+## Pull request labels
+
+Apply exactly one release-note label to every pull request before opening it:
+
+- `roster` for catalogue or warband roster updates.
+- `rules` for changes to roster legality or other rules enforcement.
+- `enhancement` for non-rule improvements.
+- `bug` or `fix` for corrections to existing behaviour.
+- `skip-changelog` only when the pull request should be excluded from release notes.
+
+GitHub groups these labels in generated release notes: `roster`, `rules`, and
+`enhancement` appear under "Roster and rules updates"; `bug` and `fix` appear
+under "Bug fixes"; unlabeled pull requests appear under "Other changes".
