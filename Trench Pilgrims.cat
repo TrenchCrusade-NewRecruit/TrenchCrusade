@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -1316,7 +1316,7 @@ Additionally, a friendly model in base to base contact with a model equipped wit
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Heavy Flamethrower" hidden="false" id="bb2e-5784-36a1-f09b" type="selectionEntry" targetId="b754-bcf6-152f-69e7" sortIndex="2">
+        <entryLink import="true" name="Heavy Flamethrower" hidden="true" id="bb2e-5784-36a1-f09b" type="selectionEntry" targetId="b754-bcf6-152f-69e7" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
           </costs>
@@ -1328,7 +1328,7 @@ Additionally, a friendly model in base to base contact with a model equipped wit
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Anti-Material Rifle" hidden="false" id="34e1-42e8-4b88-18ae" type="selectionEntry" targetId="19f3-086f-a5ad-f662" sortIndex="4">
+        <entryLink import="true" name="Anti-Materiel Rifle" hidden="true" id="34e1-42e8-4b88-18ae" type="selectionEntry" targetId="19f3-086f-a5ad-f662" sortIndex="4">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
           </costs>
