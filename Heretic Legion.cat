@@ -1116,16 +1116,13 @@
       </selectionEntryGroups>
       <constraints>
         <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="fdf2-72c7-8ada-82f0" includeChildSelections="true"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="a446-37c8-07e4-476c" includeChildSelections="true" childId="e24e-229d-3831-76f4"/>
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="6261-b217-6eba-7048" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="2"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="71bf-0c2b-8f27-640e" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="880f-3d04-e7a6-e385" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="1"/>
-        <entryLink import="true" name="Weapons" hidden="false" id="35ad-5260-4667-c149" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" defaultAmount="0" sortIndex="3">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="a446-37c8-07e4-476c" includeChildSelections="true"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Weapons" hidden="false" id="35ad-5260-4667-c149" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="3"/>
         <entryLink import="true" name="Grenades" hidden="false" id="e6c4-29a7-1e40-164c" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="4"/>
       </entryLinks>
     </selectionEntry>
