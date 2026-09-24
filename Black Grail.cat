@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="false">
       <constraints>
@@ -1037,7 +1037,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Anti-Material Rifle" hidden="false" id="fdd7-6ce6-df1d-08c8" type="selectionEntry" targetId="19f3-086f-a5ad-f662" sortIndex="16">
+        <entryLink import="true" name="Anti-Materiel Rifle" hidden="false" id="fdd7-6ce6-df1d-08c8" type="selectionEntry" targetId="19f3-086f-a5ad-f662" sortIndex="16">
           <costs>
             <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
           </costs>

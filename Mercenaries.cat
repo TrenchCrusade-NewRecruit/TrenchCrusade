@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="f569-e9dd-327a-5735" name="Mercenaries" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="11" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Sister of Saint Cosmas" hidden="true" id="39c2-abb6-fef0-f96e">
       <modifiers>
@@ -223,7 +223,7 @@
       <entryLinks>
         <entryLink import="true" name="Dog&apos;s Friend" hidden="false" id="7fbc-5e1a-3d4d-c6aa" type="selectionEntry" targetId="1f47-9c34-ef9b-914b" sortIndex="2"/>
         <entryLink import="true" name="Advancement" hidden="true" id="f9d6-d92e-ce30-51bc" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
-        <entryLink import="true" name="Anti-Material Rifle" hidden="false" id="0cf4-fd19-22e5-922b" type="selectionEntry" targetId="19f3-086f-a5ad-f662">
+        <entryLink import="true" name="Anti-Materiel Rifle" hidden="false" id="0cf4-fd19-22e5-922b" type="selectionEntry" targetId="19f3-086f-a5ad-f662">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f970-56e9-0ae4-6073-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f970-56e9-0ae4-6073-max" includeChildSelections="false"/>
