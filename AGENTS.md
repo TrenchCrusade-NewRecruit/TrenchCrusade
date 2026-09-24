@@ -12,6 +12,10 @@ Before changing roster legality, verify the current official rules. The official
 
 The PDFs are free to download but must not be committed. Download a dated local copy only when research requires it.
 
+## Additional warbands
+
+- **The Great Hunger:** [rules PDF](https://cdn.shopify.com/s/files/1/0622/7351/9778/files/The_Great_Hunger_Public_Playtest_1-5.pdf?v=1759784804) (official Creature Caster and Factory Fortress supplement; not included in the core Warbands PDF).
+
 ## New Recruit implementation references
 
 Use implementation references to learn how to encode a rule, not to determine what the rule should be:
