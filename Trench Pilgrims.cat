@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -3393,6 +3393,7 @@ When this happens, any BLOOD MARKERS on the Anchorite Shrine are removed, and f
       </constraints>
       <categoryLinks>
         <categoryLink targetId="afb7-d895-f4b4-73f3" id="ec65-a1b1-f61d-7232" primary="false" name="Pilgrim"/>
+        <categoryLink targetId="baee-43b9-2e20-9755" id="ab82-671d-0481-425e" primary="false" name="Negate Shrapnel"/>
         <categoryLink targetId="bd43-ddb1-262d-4489" id="8871-ad0c-6f04-ae77" primary="true" name="Troop"/>
       </categoryLinks>
       <costs>
@@ -3426,12 +3427,6 @@ When this happens, any BLOOD MARKERS on the Anchorite Shrine are removed, and f
         </entryLink>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="3467-4d15-b765-5680" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776" sortIndex="6"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="37fe-8dde-59c0-45e9" type="selectionEntryGroup" targetId="e18c-f0d9-1ca3-f7bb" sortIndex="2"/>
-        <entryLink import="true" name="Combat Helmet" hidden="false" id="5270-250b-b8a7-b70a" type="selectionEntry" targetId="dd63-2453-14d7-7e00">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e431-3db5-b730-cb49-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e431-3db5-b730-cb49-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="increment" value="1" field="9509-6e8f-57f6-ac7e">
