@@ -87,7 +87,10 @@ Apply exactly one release-note label to every pull request before opening it:
 - `rules` for changes to roster legality or other rules enforcement.
 - `enhancement` for non-rule improvements.
 - `bug` or `fix` for corrections to existing behaviour.
-- `skip-changelog` only when the pull request should be excluded from release notes.
+- `skip-changelog` for internal maintenance that has no user-facing roster or
+  rules impact, such as CI, repository metadata, release tooling, or contributor
+  guidance. Do not use it for roster data, rules enforcement, bug fixes, or
+  user-visible improvements, even when the change is small.
 
 GitHub groups these labels in generated release notes: `roster`, `rules`, and
 `enhancement` appear under "Roster and rules updates"; `bug` and `fix` appear
