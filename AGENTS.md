@@ -37,6 +37,17 @@ Use `rg` to search exact names and stable identifiers before editing.
 
 Preserve existing IDs and imports unless the change genuinely requires a new object. Rules are commonly enforced by `entryLink`, `constraint`, `modifier`, and `condition` elements rather than the displayed item name.
 
+## Data revisions
+
+Revision fields communicate catalogue updates to BattleScribe-compatible clients and New Recruit.
+
+- When a `.cat` file changes, increment that file's root `revision` attribute by exactly one from the target branch.
+- When `Trench Crusade.gst` changes, increment its root `revision` attribute by exactly one from the target branch.
+- Do not change revisions for documentation-only changes.
+- Treat a catalogue's `gameSystemRevision` as compatibility metadata, not a per-edit counter. Change it only when the catalogue must explicitly track a changed game-system definition.
+- Existing revision or `gameSystemRevision` inconsistencies are not incidental cleanup. Audit and correct them in a dedicated, validated change.
+- Before opening a PR, show the changed root revision attributes in the diff and verify the edited XML parses.
+
 ## Rule-change and issue verification
 
 Apply this process before either changing roster data/legality or filing an issue about it.
