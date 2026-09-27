@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -62,6 +62,104 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Equipment" id="8a14-be13-d97b-2a39" hidden="false">
       <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bells of Warding" hidden="true" id="6a05-c83f-71b2-9e44" sortIndex="4">
+          <comment>Procession of the Sacred Affliction battlekit</comment>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="2"/>
+          </costs>
+          <profiles>
+            <profile name="Bells of Warding" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="1f7c-93a8-2e60-b5d1">
+              <characteristics>
+                <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+                <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
+                <characteristic name="Keywords" typeId="5093-5528-b08f-1496">HELD, LEADER</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Gathering Call: Add +1 DICE to Risky Success Rolls for friendly models that are taking a Dash ACTION and are within 4&quot; of one or more models with Bells of Warding or a Musical Instrument.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Held" id="b4e2-1c3d-5e6f-7081" hidden="false" type="rule" targetId="1220-c65a-89ed-96a7"/>
+            <infoLink name="Leader" id="b4e2-1c3d-5e6f-7082" hidden="false" type="rule" targetId="9130-09e0-3351-8c4c"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a05-c83f-71b2-9e44-max" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a05-c83f-71b2-9e44-lim" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blessed Millstone" hidden="true" id="2c77-e419-5db8-0a63" sortIndex="4">
+          <comment>Procession of the Sacred Affliction battlekit</comment>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Blessed Millstone" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="5b8e-04f2-a917-6c30">
+              <characteristics>
+                <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+                <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
+                <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Weighted with Sin: Subtract 1&quot; from the Movement Characteristic of a model with a Blessed Millstone, but add +2 INJURY DICE because of the Crushing Millstones special rule instead of the usual +1 INJURY DICE. If the model takes an enemy Out of Action with a Melee Attack they can, at the option of the player, be freed of the crushing weight of the Blessed Millstone, regaining their full Movement Characteristic plus 1&quot; additional (the freedom of a lightened soul), and using the Punishing Millstones special rule normally from then on. After the battle you can return the Blessed Millstone to the model or bestow it on a different model in the Warband.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c77-e419-5db8-0a63-max" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="2c77-e419-5db8-0a63-lim" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3249-993c-9f42-06ad" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Penitent&apos;s Phylactery" hidden="true" id="9b3d-6f21-c40e-7a52" sortIndex="4">
+          <comment>Procession of the Sacred Affliction battlekit</comment>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="12"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Penitent&apos;s Phylactery" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="0d6a-4e83-b125-7f94">
+              <characteristics>
+                <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+                <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
+                <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Repudiation of Sin: When a model with a Penitent&apos;s Phylactery makes a Melee Attack that targets a model with the HERETIC, THE COURT or BLACK GRAIL Keyword, place 1 extra BLOOD MARKER next to the target model after making the Injury Roll (even if the Injury Roll has No Effect).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b3d-6f21-c40e-7a52-max" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="9b3d-6f21-c40e-7a52-lim" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Sacrificial Lamb" hidden="true" id="4c11-ec67-eaa0-fbdd" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
@@ -410,6 +508,39 @@
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee (Two-Handed)" id="9748-bc4f-a372-e2a2" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Great Flail/Scourge" hidden="true" id="7f31-a2c4-9d05-6e18" sortIndex="4">
+          <comment>Procession of the Sacred Affliction battlekit</comment>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Great Flail/Scourge" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="3e8b-55d1-90fa-4c27">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 DICE, +1 INJURY DICE, CUMBERSOME, HEAVY</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cumbersome" id="a3f1-0b2c-4d5e-6f70" hidden="false" type="rule" targetId="5613-c861-daeb-156a"/>
+            <infoLink name="Heavy" id="a3f1-0b2c-4d5e-6f71" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="7f31-a2c4-9d05-6e18-lim" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combo" id="e049-b985-1a16-2433" hidden="false">
           <selectionEntries>
@@ -1131,6 +1262,33 @@ Additionally, a friendly model in base to base contact with a model equipped wit
             <infoLink name="Holy Icon Armour" id="e4ea-3ed2-d659-e2e3" hidden="false" type="profile" targetId="0b4c-42b8-cf94-e25f"/>
             <infoLink name="Impervious" id="db2a-ff2c-549c-eba7" hidden="false" type="rule" targetId="00a9-ddfe-2a2b-078d"/>
           </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ragged Vestments" hidden="true" id="4d92-1b7e-3fa6-08c5" sortIndex="4">
+          <comment>Procession of the Sacred Affliction battlekit</comment>
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Ragged Vestments" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="8c14-72e9-05bd-4f3a">
+              <characteristics>
+                <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
+                <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
+                <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Leap of Faith: Add +1 DICE to Risky Success Roll whenever a model with Ragged Vestments Climbs, Jumps, or makes a Diving Charge, or takes a Dash ACTION, as long as the model does not have a Shield, or any Weapons with the HEAVY Keyword.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d92-1b7e-3fa6-08c5-max" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <modifiers>
