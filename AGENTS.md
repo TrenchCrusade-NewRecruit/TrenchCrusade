@@ -7,14 +7,16 @@ Before changing roster legality, verify the current official rules. The official
 - [Official Rules page](https://www.trenchcrusade.com/rules/)
 - [Digital Rulebook 1.0.2 (PDF)](https://www.trenchcrusade.com/app/uploads/2026/09/Trench-Crusade-Digital-Rulebook.pdf)
 - [Warbands of Trench Crusade 1.0.2 (PDF)](https://www.trenchcrusade.com/app/uploads/2026/09/Warbands-of-Trench-Crusade.pdf)
-- [Procession of the Sacred Affliction Warband (PDF)](https://www.trenchcrusade.com/app/uploads/2026/09/Procession-of-the-Sacred-Affliction-Warband.pdf)
-- [Heretic Naval Raiders Warband (PDF)](https://www.trenchcrusade.com/app/uploads/2026/09/Heretic-Naval-Raiders-Warband.pdf)
 
 The PDFs are free to download but must not be committed. Download a dated local copy only when research requires it.
 
 ## Additional warbands
 
-- **The Great Hunger:** [rules PDF](https://cdn.shopify.com/s/files/1/0622/7351/9778/files/The_Great_Hunger_Public_Playtest_1-5.pdf?v=1759784804) (official Creature Caster and Factory Fortress supplement; not included in the core Warbands PDF).
+- **New Antioch – Prussian Stoßtruppen:** [compendium PDF](https://www.trenchcrusade.com/app/uploads/2026/02/Prussian-Stosstruppen-Warband.pdf).
+- **Procession of the Sacred Affliction:** [compendium PDF](https://www.trenchcrusade.com/app/uploads/2026/09/Procession-of-the-Sacred-Affliction-Warband.pdf).
+- **Heretic Naval Raiders:** [compendium PDF](https://www.trenchcrusade.com/app/uploads/2026/09/Heretic-Naval-Raiders-Warband.pdf).
+- **New Antioch – The Red Brigade:** [compendium PDF](https://www.trenchcrusade.com/app/uploads/2026/05/The-Red-Brigade-1.0.2.pdf).
+- **The Black Grail – The Great Hunger:** [compendium PDF](https://www.trenchcrusade.com/app/uploads/2026/05/The-Great-Hunger-1.0.2.pdf).
 
 ## New Recruit implementation references
 
