@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -3921,45 +3921,6 @@ When this happens, any BLOOD MARKERS on the Anchorite Shrine are removed, and f
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="3827-6b97-fd55-4e11-max-max" includeChildSelections="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction" hidden="false" id="0d88-774c-22af-e2fc">
-              <profiles>
-                <profile name="Face Thy Fears" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="bcd9-4d7d-fd27-9fc5">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Models in a Procession of the Sacred Affliction Warband cannot have Iron Capirotes. Ecclesiastic Prisoners in a Procession of the Sacred Affliction Warband do not have Iron Capirotes, but their cost remains the same.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Hammer and the Anvil" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="094b-0da3-d4d8-1979">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Anti-Tank Hammers taken for a Procession of the Sacred Affliction Warband do not have the (ELITE only) restriction.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Reliquary Armoury" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="5f54-da18-cb78-f4ee">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Holy Icon Shields cost 20 ducats for a Procession of the Sacred Affliction Warband and do not have the (ELITE only) restriction.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Punishing Millstones" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="aaa4-243f-d998-d366">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add +1 INJURY DICE for Melee Attacks made by models from a Procession of the Sacred Affliction if the target is Down. This special rule does not apply to attacks made by Ecclesiastic Prisoners.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Melee-Focused" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a231-5d63-e5ee-e551">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Models in a Procession of the Sacred Affliction Warband cannot have any Machine Guns, and Punt Guns have the (Limit: 1) stipulation.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Zealot Strength" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="4353-c510-5d4e-63d1">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to three Trench Pilgrims and/or Martyr-Penitents in a Procession of the Sacred Affliction Warband can have Zealot Strength instead of only one.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Wrath of God" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="86fd-13bd-28d2-a251">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to 1 Castigator, or Trench Pilgrim, or Martyr Penitent can have the Wrath of God special rule at a cost of 15 ducats. BLOOD MARKERS are never placed next to a model with the Wrath of God special rule, and it has the NEGATE FEAR Keyword. It cannot be Broken on the Wheel by an Anchorite Shrine. A model with the Wrath of God special rule cannot have Ranged Weapons or Armour (it can have a Shield). In addition, change the base size of the model to 32mm.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Cavalcade of the Tenth Plague" hidden="false" id="8b6b-5bd4-c742-bb12">
               <profiles>
                 <profile name="Day of His Wrath" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="0dce-bfc4-58eb-1d8e">

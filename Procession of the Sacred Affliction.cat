@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction Rules" hidden="false" id="0d88-774c-22af-e2fc">
+      <profiles>
+        <profile name="Punishing Millstones" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="4165-7995-659c-116e">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add +1 INJURY DICE for Melee Attacks made by models from a Procession of the Sacred Affliction if the target is Down. This bonus is in addition to the +1 INJURY DICE modifier that normally applies when a target is Down, giving a total of +2 INJURY DICE to the roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Wrath of God" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="6504-7f68-1688-0f4d">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to 1 Lazarist Castigator, Leper-Pilgrim, or Martyr Penitent can have the Wrath of God special rule at a cost of 15 ducats. BLOOD MARKERS are never placed next to a model with the Wrath of God special rule, and it has the NEGATE FEAR Keyword. It cannot be Broken on the Wheel by an Anchorite Shrine. A model with the Wrath of God special rule cannot have Ranged Weapons or Armour (it can have a Shield). In addition, change the base size of the model to 32mm.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mercenaries" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="568c-6690-5a64-9a48">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Procession of the Sacred Affliction can use any Faithful Mercenaries that can be taken by PILGRIM Warbands.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="2458-1f70-9f50-c02e" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="be7d-f111-c8e1-5395" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="705b-e23f-e9c2-58ab" id="146b-752c-f9a7-9398" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Trench Pilgrims" id="0837-b879-9ed1-df42" targetId="d54d-055d-bbc0-a20f" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Campaign Rules" id="51ad-bb52-c63f-9b3a" targetId="ba52-3616-d7f9-8d0c" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Mercenaries" id="96fb-f47c-dbd5-e47e" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Lazarist Prophet" hidden="false" id="f22d-6833-6df1-4b89" type="selectionEntry" targetId="9e21-4c7a-1f38-ba60"/>
+    <entryLink import="true" name="Lazarist Communicant" hidden="false" id="677c-5f43-c3b7-37df" type="selectionEntry" targetId="d2b6-8e4f-5c01-2a73"/>
+    <entryLink import="true" name="Lazarist Castigator" hidden="false" id="97d1-89e5-499d-946e" type="selectionEntry" targetId="c1a5-7d3e-4b90-1f62"/>
+    <entryLink import="true" name="Leper-Pilgrim" hidden="false" id="59d0-126e-b4df-b1a4" type="selectionEntry" targetId="3249-993c-9f42-06ad">
+      <modifiers>
+        <modifier type="set" value="Leper-Pilgrim" field="name"/>
+        <modifier type="set" value="Leper-Pilgrim" field="name" affects="profiles.Unit"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Stigmatic Nun" hidden="false" id="36c1-13a7-561a-4a3e" type="selectionEntry" targetId="caa2-22ce-1bc5-4d51">
+      <modifiers>
+        <modifier type="set" value="60" field="8d43-33fd-332d-17a6"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Ecclesiastic Prisoner" hidden="false" id="9b5a-f6a5-5126-cef9" type="selectionEntry" targetId="a43e-f0e1-fb97-0291"/>
+    <entryLink import="true" name="Anchorite Shrine" hidden="false" id="dd73-0bfd-8543-cbde" type="selectionEntry" targetId="f2e8-cc7b-df49-4819"/>
+    <entryLink import="true" name="Scripture Guardian" hidden="false" id="2122-c6ec-810b-5a39" type="selectionEntry" targetId="08cc-f1b9-e991-e191">
+      <entryLinks>
+        <entryLink import="true" name="Melee Weapons" hidden="false" id="d064-ef77-48e2-0c33" type="selectionEntryGroup" targetId="62f4-69da-ce54-3b68" sortIndex="2"/>
+        <entryLink import="true" name="Fireteams" hidden="false" id="f8ec-4f8f-2505-6aa0" type="selectionEntryGroup" targetId="e18c-f0d9-1ca3-f7bb" sortIndex="1"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Pile of Stuff" hidden="false" id="5c89-1a0b-1e53-6814" type="selectionEntry" targetId="320f-1c55-4059-3ef1"/>
+    <entryLink import="true" name="Homunculus" hidden="true" id="3a5b-6147-1f98-1f33" type="selectionEntry" targetId="3eda-5baa-29d3-d617">
+      <categoryLinks>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="3445-cc34-ea37-8c52" primary="true" name="Troop"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f73c-0f08-e6c3-e9fd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+</catalogue>
