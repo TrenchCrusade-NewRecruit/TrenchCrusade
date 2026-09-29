@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction Rules" hidden="false" id="0d88-774c-22af-e2fc">
       <profiles>
@@ -300,7 +300,11 @@
     <entryLink import="true" name="Leper-Pilgrim" hidden="false" id="59d0-126e-b4df-b1a4" type="selectionEntry" targetId="3249-993c-9f42-06ad">
       <modifiers>
         <modifier type="set" value="Leper-Pilgrim" field="name"/>
-        <modifier type="set" value="Leper-Pilgrim" field="name" affects="profiles.Unit"/>
+        <modifier type="set" value="Leper-Pilgrim" field="name" affects="profiles.Unit">
+          <conditions>
+            <condition type="lessThan" value="1" field="selections" scope="self" childId="b32b-6d55-9163-8486" shared="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </entryLink>
     <entryLink import="true" name="Stigmatic Nun" hidden="false" id="36c1-13a7-561a-4a3e" type="selectionEntry" targetId="caa2-22ce-1bc5-4d51">
