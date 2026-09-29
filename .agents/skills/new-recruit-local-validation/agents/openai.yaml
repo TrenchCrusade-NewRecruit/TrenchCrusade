@@ -1,0 +1,3 @@
+interface:
+  display_name: "New Recruit Local Validation"
+  short_description: "Validate local New Recruit roster changes"
