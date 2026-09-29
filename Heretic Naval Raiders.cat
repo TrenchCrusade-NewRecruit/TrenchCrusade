@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders Rules" hidden="false" id="4d05-603e-4b5a-aed4">
+      <profiles>
+        <profile name="Fast as Lightning" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="9d93-8642-ca3e-ad48">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add +1 DICE to the Risky Success Roll for models from a Heretic Naval Raiders Warband that are taking a Dash ACTION.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unseen Advance" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="eeb4-b3ae-c7eb-5bf5">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to 3 models without the ELITE Keyword in a Heretic Naval Raiders Warband can be given the INFILTRATOR Keyword at a cost of 10 ducats each.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mercenaries" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="486f-5f63-8579-ac87">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Heretic Naval Raiders Warbands can use any Fallen Mercenaries that can be taken by HERETIC Warbands.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ba69-1240-b9ed-65ab" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7d4f-ec36-2951-e29f" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="705b-e23f-e9c2-58ab" id="52dd-b4d7-adf0-243a" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Heretic Captain" hidden="false" id="2d34-a87b-bf44-89e9">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="80"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7ba1-f516-e8cf-3957" id="5a81-4439-d69b-16dd" primary="false" name="Heretic"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="05c5-c60e-4b97-f022" primary="true" name="Elite"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Heretic Captain" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="59fe-aa6b-25b5-7e90">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+2 DICE</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 DICE</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Puppet Master" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="160b-ac27-f0d8-ebc8">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Puppet Master ACTION: A Heretic Captain can take a Puppet Master ACTION. If they do so, take a Risky Success Roll for the model. If the roll is a Failure, the Heretic Captain&apos;s Activation ends immediately. If the roll is a Success or Critical Success, pick 1 model (friend or foe) that is within 12&quot; of the Heretic Captain and in their Line of Sight, apart from the Heretic Captain themselves. You can move the model D6&quot;. The move must be in a straight line, but can be in any direction, and can be used to make the model move within 1&quot; of an enemy, make a retreat move, Climb, Jump, or Jump Down. The model cannot make a Diving Charge and does not count as charging if it finishes the move within 1&quot; of an enemy model.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Naval Battlekit" hidden="false" id="b9e1-21f0-67b4-3b61" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="a144-163b-f18a-f9de" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="5" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="cc92-06a5-3ed6-eab1" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+        <entryLink import="true" name="Weapons" hidden="false" id="036f-38b2-c6e3-e913" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="4"/>
+        <entryLink import="true" name="Armour" hidden="false" id="5063-3021-b61f-905d" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Advancement" hidden="true" id="380b-d8e1-646e-97d6" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="61fd-6a7e-c6d7-657c" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
+        <entryLink import="true" name="Fireteams" hidden="false" id="af74-cf8f-f6f4-0d55" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="2"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="d1fb-6912-8adb-9231" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="5f1b-34ce-c9d1-0f7a" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Tough" id="98f3-8dce-c932-7797" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+        <infoLink name="Leader" id="05f7-2896-7805-f603" hidden="false" type="rule" targetId="9130-09e0-3351-8c4c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Abyssal Commando" hidden="false" id="ac29-bd36-957f-61cc">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="90"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="7ba1-f516-e8cf-3957" id="bc5f-33e6-74b8-1df3" primary="false" name="Heretic"/>
+        <categoryLink targetId="3de0-192c-3ec2-51be" id="660d-2916-c9fb-dd1c" primary="true" name="Elite"/>
+        <categoryLink targetId="9b36-57f6-1887-7bea" id="ec06-8bd5-f401-dd05" primary="false" name="Infiltrator"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Abyssal Commando" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8ed0-47ba-6872-a9d0">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+1 DICE</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+2 DICE</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fade" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="c40b-5a73-7552-d9ce">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Fade ACTION: An Abyssal Commando can take a Fade ACTION if they are in contact with terrain that is composed of water or a terrain piece at least 1/2&quot; high. If they do so, take a Risky Success Roll for the model and add +1 DICE to the roll. If the roll is a Failure, the Abyssal Commando&apos;s Activation ends immediately. If the roll is a Success or Critical Success, enemy models cannot choose the Abyssal Commando as the target for a Ranged Attack or Charge until the Abyssal Commando moves, charges, retreats, makes a Ranged Attack, or an enemy model moves within 1.5&quot; of them. The Abyssal Commando can be hit if they are within the blast radius of a Weapon with the BLAST Keyword.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mist-Shrouded" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="824e-f308-0f77-b746">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add -1 DICE to Ranged Attacks that target an Abyssal Commando.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Commando Weapons" id="73b1-9866-73f1-5799" hidden="false" sortIndex="3">
+          <entryLinks>
+            <entryLink import="true" name="Melee Weapons" hidden="false" id="1922-f520-85e3-3c44" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
+            <entryLink import="true" name="Utility Hand" hidden="false" id="b437-e032-7762-b41d" type="selectionEntryGroup" targetId="3676-db5e-8076-8b90"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hull Drill" hidden="false" id="5080-81aa-91b9-591e">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+              </costs>
+              <profiles>
+                <profile name="Hull Drill" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="9550-2b5c-184d-fb9a">
+                  <characteristics>
+                    <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                    <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                    <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">CRITICAL, HELD, IGNORE ARMOUR, RISKY</characteristic>
+                    <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tartarus Claws" hidden="false" id="be5f-fb22-34d9-6e71">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Tartarus Claws" id="feea-1d87-f797-6c7b" hidden="false" type="profile" targetId="0999-4c6b-539f-d1b2"/>
+                <infoLink name="Critical" id="528f-6607-3afe-dbd0" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
+                <infoLink name="Cumbersome" id="7034-5bc9-4532-7b03" hidden="false" type="rule" targetId="5613-c861-daeb-156a"/>
+                <infoLink name="Cleave" id="61c3-44ae-629c-e8a8" hidden="false" type="rule" targetId="2da7-e6f3-dc9d-4431"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapons" id="fb21-3ec0-5319-5b32" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Tormentor&apos;s Chain" hidden="false" id="b292-b5ad-6afa-8763">
+                  <infoLinks>
+                    <infoLink name="Tormentor Chain" id="405b-d000-73d0-4f81" hidden="false" type="profile" targetId="36d4-9b55-fd0a-150f"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="3"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Silenced Pistol" hidden="false" id="2047-1d05-31c0-7a1c" type="selectionEntry" targetId="92fc-7eaf-8c33-3f87">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c788-c88a-a16d-2d21" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="cd50-e816-8421-a763" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Abyssal Armour" hidden="false" id="d24f-2eee-a12e-7420" sortIndex="4">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+          </costs>
+          <profiles>
+            <profile name="Abyssal Armour" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="0d54-9e9d-9dd0-60ca">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">An Abyssal Commando in Abyssal Armour counts any terrain that is partially or fully made of water as Open terrain. When touching such terrain they may use a Fade ACTION and count as in Cover if the terrain&apos;s area is larger than a 32mm base.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="123e-98c1-0174-f546" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="add" value="Abyssal Armour requires Reinforced Armour" field="error">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="model" childId="a535-4fb6-c587-691a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Naval Battlekit" hidden="false" id="0893-cddc-a1d0-c8c9" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+        <entryLink import="true" name="Equipment" hidden="false" id="2df2-cafd-6892-c7fd" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
+        <entryLink import="true" name="Armour" hidden="false" id="f45a-5eea-68db-df77" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Advancement" hidden="true" id="2935-8a66-63f1-d67c" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
+        <entryLink import="true" name="Exploration Upgrades" hidden="false" id="b353-44f5-77e5-9b76" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
+        <entryLink import="true" name="Fireteams" hidden="false" id="bfe6-c0ce-800e-d1f2" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="2"/>
+        <entryLink import="true" name="Gas Grenades" hidden="false" id="2bea-558c-0e6b-f114" type="selectionEntry" targetId="ed69-d081-68a5-999e">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3b0e-af52-f8f7-248e" includeChildSelections="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="ad17-0ef3-1fd4-3877" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+      </infoLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Naval Battlekit" id="31cb-15a6-6f6b-d677" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Boarding Axe" hidden="false" id="23f8-2b1b-2d77-f13b">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Boarding Axe" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="e78e-91ce-75d4-b077">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">1-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ARMOUR PIERCING, CRITICAL, RISKY</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Boarding: Add +1 DICE to Risky Success Rolls for friendly models with this special rule that are attempting to Climb a sheer surface.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <modifiers>
+            <modifier type="decrement" value="1" field="0d4c-1598-a474-ab6a"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Wrecker&apos;s Torch" hidden="true" id="0f47-b87e-7616-314e">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Wrecker&apos;s Torch" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="9b01-455f-b76d-8f3f">
+              <characteristics>
+                <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
+                <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
+                <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">ARMOUR PIERCING, BLOCK, CUMBERSOME, FIRE</characteristic>
+                <characteristic name="Rules" typeId="87f0-637b-734a-22eb"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="f87d-5ea3-e505-6a9f" id="bf29-c80a-5d21-bf63" primary="false" name="Cumbersome"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="0d4c-1598-a474-ab6a"/>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Shark Tooth Talisman" hidden="false" id="42af-579e-728a-4679">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Shark Tooth Talisman" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="71ce-919f-34b8-bd63">
+              <characteristics>
+                <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
+                <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
+                <characteristic name="Keywords" typeId="5093-5528-b08f-1496">CONSUMABLE, NEGATE FEAR</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Blood Frenzy: Once during a game, a model with a Shark Tooth Talisman can invoke a Blood Frenzy. If they do so and any model (friend or foe) within 1&quot; of the model with the Shark Tooth Talisman has 1 or more BLOOD MARKERS, add +1 DICE to the Success Rolls for Melee Attacks made by the model with the Shark Tooth Talisman for the rest of their Activation.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd7e-00a7-4c36-e32d" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Consumable" id="e21c-8db9-b7d5-5d1d" hidden="false" type="rule" targetId="e98d-4bd1-3870-27b9"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Heretic Legion" id="10e8-977f-209b-1ec2" targetId="6941-ec54-3001-8288" importRootEntries="false"/>
+    <catalogueLink type="catalogue" name="Campaign Rules" id="5d12-b1bc-65c8-aad4" targetId="ba52-3616-d7f9-8d0c" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Mercenaries" id="604a-1d50-7a2e-4b84" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Drowned Chorister" hidden="false" id="61fd-0b3a-fba2-6470" type="selectionEntry" targetId="fe81-08b2-7161-d4cb">
+      <entryLinks>
+        <entryLink import="true" name="Naval Battlekit" hidden="false" id="d7a4-33c6-02ce-a1cf" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Leviathan Bell" hidden="false" id="694a-8a7c-849d-24ca">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Leviathan Bell" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="79b2-9498-c398-3623">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">You do not have to take a Risky Success Roll for a Drowned Chorister with a Leviathan Bell when they Climb or Jump, nor make an Injury Roll if they Fall.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3242-bb3c-8358-5393" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="Drowned Chorister" field="name"/>
+        <modifier type="set" value="Drowned Chorister" field="name" affects="profiles.Unit"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Heretic Raiders" hidden="false" id="fc5b-2700-41ac-2c85" type="selectionEntry" targetId="3844-b41c-9ecc-85b9">
+      <entryLinks>
+        <entryLink import="true" name="Naval Battlekit" hidden="false" id="a23d-13ef-35e0-5961" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Heretic Raider" field="name"/>
+        <modifier type="set" value="Heretic Raider" field="name" affects="profiles.Unit"/>
+        <modifier type="set" value="Heretic Raider Legionnaire" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="Heretic Raider Legionnaire" field="name" affects="profiles.Unit">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="f606-4316-044d-4503" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Wretched" hidden="false" id="c328-846d-087b-0205" type="selectionEntry" targetId="cf02-7a3e-ffbf-d7f9">
+      <entryLinks>
+        <entryLink import="true" name="Naval Battlekit" hidden="false" id="227e-182d-24aa-9a0d" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Anointed Heretic Raider" hidden="false" id="1020-a58e-bcd7-1fdc" type="selectionEntry" targetId="15bf-43f1-0650-1070">
+      <entryLinks>
+        <entryLink import="true" name="Naval Battlekit" hidden="false" id="fdb9-0fbe-fbd7-c0bc" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="Anointed Heretic Raider" field="name"/>
+        <modifier type="set" value="Anointed Heretic Raider" field="name" affects="profiles.Unit"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Sea Hag" hidden="false" id="cebe-530d-a8be-1e4f" type="selectionEntry" targetId="f2d9-0f99-61a1-fce5">
+      <entryLinks>
+        <entryLink import="true" name="Naval Battlekit" hidden="false" id="de44-cdfc-8e12-7c34" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Infernal Mines" hidden="false" id="a4f3-8e2c-ae21-3c5b">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Infernal Mine" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="5b17-ae6e-df1d-69d2">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">After rolling for scatter, an Infernal Bomb can be left in place to be detonated later by the close proximity of an enemy model or at the option of the player controlling the Sea Hag. Leave a marker where the bomb landed. If an enemy model finishes a move within 3&quot; of it, you can interrupt its Activation and detonate the mine. If an unexploded mine is on the battlefield at the beginning of the Sea Hag&apos;s Activation it can be detonated with a Detonate ACTION. Resolve it as an Infernal Bomb. A Sea Hag may have only 1 Infernal Mine marker in play at any one time.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a708-0894-982a-761d" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="Sea Hag" field="name"/>
+        <modifier type="set" value="Sea Hag" field="name" affects="profiles.Unit"/>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Scripture Guardian" hidden="false" id="f17b-7735-f849-fc5f" type="selectionEntry" targetId="08cc-f1b9-e991-e191">
+      <entryLinks>
+        <entryLink import="true" name="Melee Weapons" hidden="false" id="0041-2216-297b-64fa" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
+        <entryLink import="true" name="Fireteams" hidden="false" id="a576-5467-e693-a991" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="true" name="Pile of Stuff" hidden="false" id="2c9f-039b-a9c4-d8ba" type="selectionEntry" targetId="afbe-4010-1921-03ae"/>
+    <entryLink import="true" name="Battlefield Title" hidden="false" id="311b-f805-ad55-1707" type="selectionEntry" targetId="74e6-0563-729c-5a06">
+      <categoryLinks>
+        <categoryLink targetId="705b-e23f-e9c2-58ab" id="2167-f1bb-48b2-99ba" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Homunculus" hidden="true" id="31c2-5032-9818-9222" type="selectionEntry" targetId="e6f9-0f05-aa5b-06cd">
+      <categoryLinks>
+        <categoryLink targetId="bd43-ddb1-262d-4489" id="7db1-9907-ecda-8175" primary="true" name="Troop"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f73c-0f08-e6c3-e9fd" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+</catalogue>
