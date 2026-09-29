@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="27" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6941-ec54-3001-8288" name="Heretic Legion" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="28" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="model" import="true" name="Anointed Heavy Infantry" hidden="false" id="15bf-43f1-0650-1070" publicationId="c658-4a10-e1fe-befc" page="22">
       <costs>
@@ -1594,41 +1594,6 @@ Characteristic of 3”/Infantry when it takes a Dash ACTION. In addition, add -
                   <comment>im not implementing this again, so hiding rather than removing.</comment>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders" hidden="false" id="4d05-603e-4b5a-aed4">
-              <profiles>
-                <profile name="Close Assault Weapons" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="9ef5-9c37-2db2-8bb9">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Submachine Guns cost 25 ducats for a Heretic Naval Raiders Warband.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Unseen Advance" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="be89-20dd-8e06-9309">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Up to three models without the ELITE Keyword in a Heretic Naval Raiders Warband can be given the INFILTRATOR Keyword at a cost of +10 ducats each.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Light Troops" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="4e2e-e5c2-c100-0a16">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Heretic Naval Raiders Warband cannot have more than two Anointed models or more than 1 Artillery Witch (even if the Warband has a value of 1,000 ducats or more).</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Let Sleeping Dogs Lie" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="2bfc-ba39-b280-debb">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">This Warband cannot include a War Wolf.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Fast as Lightning" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="84f7-b619-cba1-b824">
-                  <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add +1 DICE to the Risky Success Roll for models from a Heretic Naval Raiders Warband that are taking a Dash ACTION.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4046-8150-770b-9adf" includeChildSelections="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Infiltrator" id="a4c7-fda3-fe57-a931" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Knights of Avarice" hidden="false" id="c323-0c33-e628-56f0">
               <constraints>
