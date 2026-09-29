@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -383,6 +383,17 @@
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="65bd-e9b5-eea8-5f65" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <comment>Lazarist Communicants cannot take Martyrdom Pills</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="d2b6-8e4f-5c01-2a73" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" value="1" field="f6b5-c34c-105c-981b">
               <repeats>
@@ -3575,7 +3586,7 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
                 <characteristic name="Type" typeId="3f15-74a1-4d35-3642"/>
                 <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
                 <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
-                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">An Ecclesiastic Prisoner with a Martyrdom Device can take a Trigger Martyrdom Device ACTION. If they do so, the Martyrdom Device detonates and cannot be used again. When Martyrdom Device detonates, make an Injury Roll for all models within 3&quot; of the Ecclesiastic Prisoner (friend or foe, including the Ecclesiastic Prisoner). Make the Injury Roll for the Ecclesiastic Prisoner by rolling 4D6 and adding all 4 dice together, and add +1 INJURY DICE to the Injury Rolls for other models that are within 1&quot; of the Ecclesiastic Prisoner. If an Ecclesiastic Prisoner detonates their Martyrdom Device and survives the game, you must either buy them a new Martyrdom Device for 35 ducats, or use them without one.</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">An Ecclesiastic Prisoner with a Martyrdom Device can take a Trigger Martyrdom Device ACTION. If they do so, the Martyrdom Device detonates and cannot be used again. When Martyrdom Device detonates, make an Injury Roll for all models within 3&quot; of the Ecclesiastic Prisoner (friend or foe, including the Ecclesiastic Prisoner). Make the Injury Roll for the Ecclesiastic Prisoner by rolling 4D6 and adding all 4 dice together, and add +1 INJURY DICE to the Injury Rolls for other models that are within 1&quot; of the Ecclesiastic Prisoner. If an Ecclesiastic Prisoner detonates their Martyrdom Device and survives the game, you must either buy them a new Martyrdom Device for 25 ducats, or use them without one.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3583,6 +3594,12 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="52bc-6b21-136a-608d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="25" field="8d43-33fd-332d-17a6">
+              <comment>Procession of the Sacred Affliction Martyrdom Device cost</comment>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
