@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -125,8 +125,15 @@
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3249-993c-9f42-06ad" shared="true"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="3249-993c-9f42-06ad" shared="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="model" childId="6e13-b490-6574-443c" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -280,7 +287,15 @@
         <entryLink import="true" name="Curative Fluids" hidden="true" id="eced-e795-aa11-ed5a" type="selectionEntry" targetId="0e49-dfa5-4190-ee69"/>
         <entryLink import="true" name="Lock of Samson&apos;s Hair" hidden="false" id="f264-2ade-c985-d3d7" type="selectionEntry" targetId="9b61-d0a4-dd30-2d32"/>
         <entryLink import="true" name="Saints Reliquary" hidden="true" id="5d29-e0b3-1ac1-c9ae" type="selectionEntry" targetId="cf19-f306-c26c-1537"/>
-        <entryLink import="true" name="Dog Food" hidden="false" id="5e90-ed78-533d-3a9b" type="selectionEntry" targetId="05f3-2ee4-36c0-8c25" sortIndex="10"/>
+        <entryLink import="true" name="Dog Food" hidden="false" id="5e90-ed78-533d-3a9b" type="selectionEntry" targetId="05f3-2ee4-36c0-8c25" sortIndex="10">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
         <entryLink import="true" name="Rocket-Propelled Grenade" hidden="true" id="3508-a51d-ef3f-c1a1" type="selectionEntry" targetId="e365-c945-740f-e764" sortIndex="11"/>
         <entryLink import="true" name="Gas Mask" hidden="false" id="7ce7-a7a6-71d0-35ba" type="selectionEntry" targetId="8927-946d-c993-14ee" sortIndex="3">
           <costs>
@@ -442,9 +457,14 @@
         <selectionEntryGroup name="Grenades" id="2368-4e49-14f9-6cd2" hidden="false" sortIndex="1">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="caa2-22ce-1bc5-4d51" shared="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="caa2-22ce-1bc5-4d51" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="a28a-9034-856e-4b60" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <entryLinks>
@@ -1334,9 +1354,9 @@ Additionally, a friendly model in base to base contact with a model equipped wit
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
           </costs>
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
