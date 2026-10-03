@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders Rules" hidden="false" id="4d05-603e-4b5a-aed4">
       <profiles>
@@ -485,6 +485,14 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Hellbound Soul Contract" hidden="false" id="fb520de2-3ec9-4a05-a519-1e3cc5711d44" type="selectionEntry" targetId="a2d4-cd33-46c4-3b81" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="24c25147-f7fd-4ffd-ae37-a5c9980d5c7f" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Advancement" hidden="true" id="5880cbf9-10ac-51fc-8a1c-6f192d3ebd80" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="c2104249-c279-5302-896f-d257c099bc7c" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="435405f1-73d5-575c-a268-2e41d033d499" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="2"/>
@@ -602,14 +610,6 @@
         <entryLink import="true" name="Equipment" hidden="false" id="c24a7364-f590-519e-a0c3-a88b66ae1990" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true" sortIndex="6"/>
         <entryLink import="true" name="Weapons" hidden="false" id="10b35c35-72dd-56f1-af3f-c6cc63ce0f37" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="4"/>
         <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="d30187cc-ff8c-58c7-991e-b91a30646973" type="selectionEntry" targetId="4d671f6e-5a78-4d0d-bbaa-ef0ce90e9cd7" sortIndex="3"/>
-        <entryLink import="true" name="Hellbound Soul Contract" hidden="false" id="fb520de2-3ec9-4a05-a519-1e3cc5711d44" type="selectionEntry" targetId="a2d4-cd33-46c4-3b81" sortIndex="8">
-          <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="24c25147-f7fd-4ffd-ae37-a5c9980d5c7f" includeChildSelections="true"/>
-          </constraints>
-        </entryLink>
         <entryLink import="true" name="Advancement" hidden="true" id="5b3b0115-5781-5c71-9700-903117a9f162" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="30d280ea-60d7-542b-8637-ea14c6efe243" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776" sortIndex="7"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="ac366c6a-3580-5dc3-87ba-398f8d9a5315" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="2"/>
@@ -1032,13 +1032,6 @@
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="18e1caca-219b-504d-aac1-d911715cc86c" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
         </entryLink>
         <entryLink import="true" name="Reinforced Armour" hidden="false" id="f743ee60-6c51-455a-b847-a10facb2f525" type="selectionEntry" targetId="a535-4fb6-c587-691a" sortIndex="2">
           <costs>
@@ -1105,8 +1098,24 @@
     <catalogueLink type="catalogue" name="Mercenaries" id="604a-1d50-7a2e-4b84" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
-    <entryLink import="true" name="Goetic Warlock" hidden="false" id="573e5cf6-b456-4ad9-8ab8-a61f40e4708e" type="selectionEntry" targetId="e9cd-3848-885f-bdac"/>
-    <entryLink import="true" name="Sin Eater" hidden="false" id="e4c97085-1d74-49d0-bc04-82b1f3c813cf" type="selectionEntry" targetId="4703-d968-d52d-46b5"/>
+    <entryLink import="true" name="Goetic Warlock" hidden="true" id="573e5cf6-b456-4ad9-8ab8-a61f40e4708e" type="selectionEntry" targetId="e9cd-3848-885f-bdac">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6497-8a39-4f5c-9873" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="true" name="Sin Eater" hidden="true" id="e4c97085-1d74-49d0-bc04-82b1f3c813cf" type="selectionEntry" targetId="4703-d968-d52d-46b5">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6497-8a39-4f5c-9873" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink import="true" name="Scripture Guardian" hidden="false" id="f17b-7735-f849-fc5f" type="selectionEntry" targetId="08cc-f1b9-e991-e191">
       <entryLinks>
         <entryLink import="true" name="Melee Weapons" hidden="false" id="0041-2216-297b-64fa" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
