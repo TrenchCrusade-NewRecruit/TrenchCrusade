@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders Rules" hidden="false" id="4d05-603e-4b5a-aed4">
       <profiles>
@@ -81,10 +81,10 @@
       </profiles>
       <entryLinks>
         <entryLink import="true" name="Naval Battlekit" hidden="false" id="b9e1-21f0-67b4-3b61" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="a144-163b-f18a-f9de" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="5" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="a144-163b-f18a-f9de" type="selectionEntryGroup" targetId="3b802a09-1d44-4d61-a30f-55ed24b29e3d" sortIndex="5" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="cc92-06a5-3ed6-eab1" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="036f-38b2-c6e3-e913" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="4"/>
-        <entryLink import="true" name="Armour" hidden="false" id="5063-3021-b61f-905d" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Armour" hidden="false" id="5063-3021-b61f-905d" type="selectionEntryGroup" targetId="69c6d8af-3eb6-4e0a-a6d8-fcc4a8bdf1e1"/>
         <entryLink import="true" name="Advancement" hidden="true" id="380b-d8e1-646e-97d6" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="61fd-6a7e-c6d7-657c" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="af74-cf8f-f6f4-0d55" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="2"/>
@@ -219,7 +219,7 @@
       <entryLinks>
         <entryLink import="true" name="Naval Battlekit" hidden="false" id="0893-cddc-a1d0-c8c9" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="2df2-cafd-6892-c7fd" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
-        <entryLink import="true" name="Armour" hidden="false" id="f45a-5eea-68db-df77" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Armour" hidden="false" id="f45a-5eea-68db-df77" type="selectionEntryGroup" targetId="69c6d8af-3eb6-4e0a-a6d8-fcc4a8bdf1e1"/>
         <entryLink import="true" name="Advancement" hidden="true" id="2935-8a66-63f1-d67c" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="b353-44f5-77e5-9b76" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="bfe6-c0ce-800e-d1f2" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="2"/>
@@ -311,10 +311,10 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="dbba588c-f049-56c8-975e-af1e6deeffb8" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="5" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="dbba588c-f049-56c8-975e-af1e6deeffb8" type="selectionEntryGroup" targetId="3b802a09-1d44-4d61-a30f-55ed24b29e3d" sortIndex="5" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="35605cd2-ca68-5085-9eca-07fc99caf1ce" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
         <entryLink import="true" name="Weapons" hidden="false" id="8bb171de-5de8-580b-936d-b28f9eb06967" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="4"/>
-        <entryLink import="true" name="Armour" hidden="false" id="c4cb5c48-2816-5bd3-99f9-7b6fb8298545" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
+        <entryLink import="true" name="Armour" hidden="false" id="c4cb5c48-2816-5bd3-99f9-7b6fb8298545" type="selectionEntryGroup" targetId="69c6d8af-3eb6-4e0a-a6d8-fcc4a8bdf1e1"/>
         <entryLink import="true" name="Advancement" hidden="true" id="d9271427-977d-5427-981e-f5b17d3ae560" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="b7927d4c-7346-5fbb-9ae3-fa43d0db2e31" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="e15ee714-c157-5622-8c3d-8856f1eea2e3" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="3"/>
@@ -449,7 +449,7 @@
         </profile>
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="edda5d4e-85bb-58ff-bb5e-aeb35f6e31c3" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="5" collapsible="true">
+        <entryLink import="true" name="Grenades" hidden="false" id="edda5d4e-85bb-58ff-bb5e-aeb35f6e31c3" type="selectionEntryGroup" targetId="3b802a09-1d44-4d61-a30f-55ed24b29e3d" sortIndex="5" collapsible="true">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -476,7 +476,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Armour" hidden="false" id="c9d7b3b7-3749-5f3e-ae97-fed5238d065f" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a" sortIndex="6">
+        <entryLink import="true" name="Armour" hidden="false" id="c9d7b3b7-3749-5f3e-ae97-fed5238d065f" type="selectionEntryGroup" targetId="69c6d8af-3eb6-4e0a-a6d8-fcc4a8bdf1e1" sortIndex="6">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
@@ -500,7 +500,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Upgrades" id="2519b754-25df-5724-ad18-f35cd515355e" hidden="false" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="0cd0a030-4c2d-5adb-bafd-6af1f5e1516b" type="selectionEntry" targetId="7b92-190b-f8c3-531a"/>
+            <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="0cd0a030-4c2d-5adb-bafd-6af1f5e1516b" type="selectionEntry" targetId="4d671f6e-5a78-4d0d-bbaa-ef0ce90e9cd7"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Heretic Raider Legionnaire" hidden="false" id="332dc68d-9a98-5bc8-af04-e5d59f541e2d">
@@ -598,10 +598,18 @@
 
       </profiles>
       <entryLinks>
-        <entryLink import="true" name="Grenades" hidden="false" id="9e416c42-7b14-5199-a128-f2a653966aea" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="5" collapsible="true"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="9e416c42-7b14-5199-a128-f2a653966aea" type="selectionEntryGroup" targetId="3b802a09-1d44-4d61-a30f-55ed24b29e3d" sortIndex="5" collapsible="true"/>
         <entryLink import="true" name="Equipment" hidden="false" id="c24a7364-f590-519e-a0c3-a88b66ae1990" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true" sortIndex="6"/>
         <entryLink import="true" name="Weapons" hidden="false" id="10b35c35-72dd-56f1-af3f-c6cc63ce0f37" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="4"/>
-        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="d30187cc-ff8c-58c7-991e-b91a30646973" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="3"/>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="d30187cc-ff8c-58c7-991e-b91a30646973" type="selectionEntry" targetId="4d671f6e-5a78-4d0d-bbaa-ef0ce90e9cd7" sortIndex="3"/>
+        <entryLink import="true" name="Hellbound Soul Contract" hidden="false" id="fb520de2-3ec9-4a05-a519-1e3cc5711d44" type="selectionEntry" targetId="a2d4-cd33-46c4-3b81" sortIndex="8">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="24c25147-f7fd-4ffd-ae37-a5c9980d5c7f" includeChildSelections="true"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Advancement" hidden="true" id="5b3b0115-5781-5c71-9700-903117a9f162" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1"/>
         <entryLink import="true" name="Exploration Upgrades" hidden="false" id="30d280ea-60d7-542b-8637-ea14c6efe243" type="selectionEntryGroup" targetId="6aaa-88b6-f64b-4776" sortIndex="7"/>
         <entryLink import="true" name="Fireteams" hidden="false" id="ac366c6a-3580-5dc3-87ba-398f8d9a5315" type="selectionEntryGroup" targetId="7bcd-ee92-0f03-ae73" sortIndex="2"/>
@@ -768,6 +776,23 @@
           </characteristics>
         </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Infernal Mine" hidden="false" id="bf9f035d-751e-4165-bd9e-e41959301588">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+          <profiles>
+            <profile name="Infernal Mine" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="491c6b17-9941-4168-9706-523fd5a0e3e0">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Infernal Mine: If the Infernal Mine upgrade has been taken, after rolling for scatter, an Infernal Bomb can be left in place to be detonated later by the close proximity of an enemy model or at the option of the player controlling the Sea Hag. Leave an appropriate marker on the spot where the bomb landed. If an enemy model finishes a move within 3&quot; of an Infernal Mine marker, you can interrupt its Activation and detonate the mine. If an unexploded Infernal Mine is on the battlefield at the beginning of the Sea Hag’s activation it can be detonated with a Detonate ACTION. When the Infernal Mine is detonated, resolve it as an Infernal Bomb. A Sea Hag may have only 1 Infernal Mine marker in play at any one time.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="620fb229-0c74-4ecc-bca1-e919474f8b19" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" id="a64204ad-502e-5747-8053-e54fee384a87" hidden="false" sortIndex="4">
           <entryLinks>
@@ -782,8 +807,8 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Equipment" hidden="false" id="5be6b004-bc02-5ce4-b810-066207e47176" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" collapsible="true"/>
-        <entryLink import="true" name="Armour" hidden="false" id="db09be79-fa03-5f8e-b111-a7bc78e7eafd" type="selectionEntryGroup" targetId="d8da-8812-463a-5a3a"/>
-        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="bf6a0e65-0a02-587d-a47d-5ac776cfcbe1" type="selectionEntry" targetId="7b92-190b-f8c3-531a" sortIndex="3"/>
+        <entryLink import="true" name="Armour" hidden="false" id="db09be79-fa03-5f8e-b111-a7bc78e7eafd" type="selectionEntryGroup" targetId="69c6d8af-3eb6-4e0a-a6d8-fcc4a8bdf1e1"/>
+        <entryLink import="true" name="Unseen Infiltrator" hidden="false" id="bf6a0e65-0a02-587d-a47d-5ac776cfcbe1" type="selectionEntry" targetId="4d671f6e-5a78-4d0d-bbaa-ef0ce90e9cd7" sortIndex="3"/>
         <entryLink import="true" name="Advancement" hidden="true" id="f34a48f4-bc0d-5eae-9a55-dd0abbb4c238" type="selectionEntryGroup" targetId="bc33-e591-8f2e-a847" collapsible="true" sortIndex="1">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
@@ -905,7 +930,7 @@
       </constraints>
       <entryLinks>
         <entryLink import="true" name="Weapons" hidden="false" id="305eef18-0ca0-5ee1-8569-59d7ba3c7d62" type="selectionEntryGroup" targetId="e24e-229d-3831-76f4" sortIndex="1"/>
-        <entryLink import="true" name="Grenades" hidden="false" id="8dff3ca5-b3c0-5b99-8e7b-72c4f9d8f799" type="selectionEntryGroup" targetId="daa0-54c9-7e0a-4d14" sortIndex="2"/>
+        <entryLink import="true" name="Grenades" hidden="false" id="8dff3ca5-b3c0-5b99-8e7b-72c4f9d8f799" type="selectionEntryGroup" targetId="3b802a09-1d44-4d61-a30f-55ed24b29e3d" sortIndex="2"/>
         <entryLink import="true" name="Equipment" hidden="false" id="587e5d51-e64e-5c6f-96e8-244f9f6b3d07" type="selectionEntryGroup" targetId="5adc-fb98-76b8-c105" sortIndex="3"/>
         <entryLink import="true" name="Naval Battlekit" hidden="false" id="d6896ae3-652c-5eed-87ad-8a9107cd9d44" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true" sortIndex="4"/>
       </entryLinks>
@@ -998,13 +1023,90 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Naval Armour" id="69c6d8af-3eb6-4e0a-a6d8-fcc4a8bdf1e1" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c18f310b-238c-4d42-8edf-d2c5174817b9" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Standard Armour" hidden="false" id="9f01f9f7-11c4-45fb-9669-ccfd54464e70" type="selectionEntry" targetId="fc21-c383-cc54-c15c" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="18e1caca-219b-504d-aac1-d911715cc86c" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Reinforced Armour" hidden="false" id="f743ee60-6c51-455a-b847-a10facb2f525" type="selectionEntry" targetId="a535-4fb6-c587-691a" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Naval Grenades" id="3b802a09-1d44-4d61-a30f-55ed24b29e3d" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0cb2c93f-bfff-4a55-baf8-4aab873c9103" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="303b8d76-0138-44f9-a63c-42bcc47fe441" type="selectionEntry" targetId="7f07-3b1b-85e7-6802" sortIndex="1">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="7"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Gas Grenades" hidden="false" id="a6034067-5aee-43eb-a2db-fb2476f14ffd" type="selectionEntry" targetId="ed69-d081-68a5-999e" sortIndex="2">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Incendiary Grenades" hidden="false" id="fdbe3879-b5a1-4b80-b091-ec010738de4b" type="selectionEntry" targetId="8adc-0183-0ef9-12a4" sortIndex="3">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Unseen Infiltrator" hidden="true" id="4d671f6e-5a78-4d0d-bbaa-ef0ce90e9cd7">
+      <costs>
+        <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Infiltrator" id="5f7fbbd3-c3ea-4f7a-8618-93a87f40b985" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4d05-603e-4b5a-aed4" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="57c7c1aa-d5b4-448b-b7fe-71a481badc16" includeChildSelections="true"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b74cfe8-cddd-446f-bd0d-dfb94b2812bb" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Heretic Legion" id="10e8-977f-209b-1ec2" targetId="6941-ec54-3001-8288" importRootEntries="false"/>
     <catalogueLink type="catalogue" name="Campaign Rules" id="5d12-b1bc-65c8-aad4" targetId="ba52-3616-d7f9-8d0c" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="Mercenaries" id="604a-1d50-7a2e-4b84" targetId="f569-e9dd-327a-5735" importRootEntries="true"/>
   </catalogueLinks>
   <entryLinks>
+    <entryLink import="true" name="Goetic Warlock" hidden="false" id="573e5cf6-b456-4ad9-8ab8-a61f40e4708e" type="selectionEntry" targetId="e9cd-3848-885f-bdac"/>
+    <entryLink import="true" name="Sin Eater" hidden="false" id="e4c97085-1d74-49d0-bc04-82b1f3c813cf" type="selectionEntry" targetId="4703-d968-d52d-46b5"/>
     <entryLink import="true" name="Scripture Guardian" hidden="false" id="f17b-7735-f849-fc5f" type="selectionEntry" targetId="08cc-f1b9-e991-e191">
       <entryLinks>
         <entryLink import="true" name="Melee Weapons" hidden="false" id="0041-2216-297b-64fa" type="selectionEntryGroup" targetId="d2cb-f99a-d244-0f6d"/>
