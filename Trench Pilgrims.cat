@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -1276,14 +1276,9 @@ Additionally, a friendly model in base to base contact with a model equipped wit
           </costs>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
