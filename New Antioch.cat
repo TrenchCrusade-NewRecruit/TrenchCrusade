@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="24ae-224b-0680-a9bd" hidden="false" collapsible="false">
       <constraints>
@@ -1882,7 +1882,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
       </modifiers>
       <entryLinks>
         <entryLink import="true" name="Ducal Winged Armour" hidden="true" id="6370-4f92-3d31-84e4" type="selectionEntry" targetId="03eb-5358-03ae-8046"/>
-        <entryLink import="true" name="Reinforced Armour" hidden="false" id="7ab3-49d1-4294-3f83" type="selectionEntry" targetId="a535-4fb6-c587-691a" sortIndex="2">
+        <entryLink import="true" name="Reinforced Armour" hidden="true" id="7ab3-49d1-4294-3f83" type="selectionEntry" targetId="a535-4fb6-c587-691a" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
           </costs>
