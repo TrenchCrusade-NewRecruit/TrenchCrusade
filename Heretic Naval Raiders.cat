@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders Rules" hidden="false" id="4d05-603e-4b5a-aed4">
       <profiles>
@@ -25,6 +25,80 @@
       </constraints>
       <categoryLinks>
         <categoryLink targetId="705b-e23f-e9c2-58ab" id="52dd-b4d7-adf0-243a" primary="true" name="Configuration"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warband Variant" hidden="false" id="ecbd39c5-1f66-4239-bf08-dcb6f322048a">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccbe7f6d-701c-4e70-9045-456fa0ab14ac" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Variant Selection" id="2d31c4d4-4a66-4f62-a39d-c24cf15eae61" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="self" shared="true" id="ca273192-c54d-446f-83b6-08b5a4b83935" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="self" shared="true" id="bc92c66e-6c96-46be-a945-5cc4590794d3" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Leviathan Shoal" hidden="false" id="e41075bf-7b42-4a2f-9bf0-4318e6faa459">
+              <profiles>
+                <profile name="Only the Strong Survive" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="fb931270-6045-49a3-9453-0f5bc9da7c3c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Leviathan Shoal Warbands can include 0-4 Anointed Heretic Raiders, and up to 1 can be recruited with the ELITE Keyword at no extra cost. In addition, Heretic Captains in this Warband have the STRONG Keyword, but it cannot include any Drowned Choristers, Wretched, or Sea Hags.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Charge and Rend" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="b0936dc0-47d2-4ca6-811c-83c52e21398e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Models in a Leviathan Shoal Warband cannot have more Ranged Weapons than Melee Weapons. If they ever do, remove Ranged Weapons from the Warband Roster until there are no more Ranged Weapons than Melee Weapons. Models in this Warband cannot have Ranged Weapons with the HEAVY Keyword. Sacrificial Blades in this Warband are Limit: 4, and may be purchased for Anointed Heretic Raider models.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Feeding Frenzy" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="756a896e-b906-47e2-9a3e-11e80600e4df">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add +1 DICE to Success Rolls for Melee Attacks made by models from a Leviathan Shoal Warband for each model (friend or foe) with 1 or more BLOOD MARKERS within 1&quot; of the model making the Melee Attack, to a maximum of +3 DICE.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Chosen Sons" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a5bfa240-f7c0-4d93-a356-239ac1b4b40a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The first time in a game that an Anointed Heretic Raider in a Leviathan Shoal Warband takes an enemy model Out of Action with a Melee Attack, that Anointed Heretic Raider gains the TOUGH Keyword for the rest of the game.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="add" value="Leviathan Shoal Warbands cannot include Anti-Materiel Rifles" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="19f3-086f-a5ad-f662" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="Leviathan Shoal Warbands cannot include Grenade Launchers" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="65c0-a52a-03c8-575a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="Leviathan Shoal Warbands cannot include Heavy Flamethrowers" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b754-bcf6-152f-69e7" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="Leviathan Shoal Warbands cannot include Heavy Shotguns" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="d16f-f704-d17a-ebc6" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="Leviathan Shoal Warbands cannot include Machine Guns" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="45c3-9d88-09fa-ee11" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="Leviathan Shoal Warbands cannot include Satchel Charges" field="error">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="f58e-81b4-c972-ed32" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="705b-e23f-e9c2-58ab" id="ac122743-0091-4592-9e39-725c5d5f45dc" primary="true" name="Configuration"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Heretic Captain" hidden="false" id="2d34-a87b-bf44-89e9">
@@ -96,7 +170,23 @@
       <infoLinks>
         <infoLink name="Tough" id="98f3-8dce-c932-7797" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
         <infoLink name="Leader" id="05f7-2896-7805-f603" hidden="false" type="rule" targetId="9130-09e0-3351-8c4c"/>
+        <infoLink name="Strong" id="efca4597-5e30-4a85-8a2c-4119366b4415" hidden="true" type="rule" targetId="6297-d0e0-1935-5cfd">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
+      <modifiers>
+        <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Abyssal Commando" hidden="false" id="ac29-bd36-957f-61cc">
       <costs>
@@ -330,6 +420,11 @@
         <modifier type="set" value="true" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="b0b0-1549-d4ec-7b5f" shared="true" includeChildSelections="true" includeChildForces="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="9f477507-9e5e-5a1b-8518-6cbc891996fd">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -633,6 +728,21 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Naval Battlekit" hidden="false" id="d2bce882-63ef-55dd-b032-a568ae47a78d" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
+        <entryLink import="true" name="Sacrificial Blade" hidden="true" id="e042c4fe-8b47-4dbc-8d3a-b9fe12845449" type="selectionEntry" targetId="8a11-d2f8-755a-3cc9" sortIndex="5">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="23"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="4" field="selections" scope="roster" shared="true" id="c0f66f28-5dbf-4376-9f59-d4e761be9114" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <constraints>
         <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="2613c11b-68ec-5d0d-b233-b3471adc937e"/>
@@ -656,6 +766,11 @@
             <condition type="atLeast" value="1" field="selections" scope="self" childId="7b92-190b-f8c3-531a" shared="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="4" field="2613c11b-68ec-5d0d-b233-b3471adc937e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -669,7 +784,42 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="b0b0-1549-d4ec-7b5f" shared="true" includeChildSelections="true" includeChildForces="true"/>
           </conditions>
         </modifierGroup>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="remove" value="bd43-ddb1-262d-4489" field="category"/>
+            <modifier type="add" value="3de0-192c-3ec2-51be" field="category"/>
+            <modifier type="set-primary" value="3de0-192c-3ec2-51be" field="category"/>
+          </modifiers>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="3aa1d525-96f8-4880-8fde-61aeccb2967e" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifierGroup>
       </modifierGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Leviathan Elite" hidden="true" id="3aa1d525-96f8-4880-8fde-61aeccb2967e">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="0"/>
+          </costs>
+          <profiles>
+            <profile name="Only the Strong Survive" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="7afd537e-c622-4baa-b9e1-b7528d7ec1dd">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">This Anointed Heretic Raider has the ELITE Keyword at no extra cost.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c5030da-ebe8-47b8-ab1c-af79070efbf6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0c0dd2d7-b8f5-42b4-b374-8f21d07a2ac3" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Sea Hag" hidden="false" id="2b93c5f0-901f-58e3-898b-4794b52e66c9">
       <costs>
@@ -849,6 +999,11 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="eee9-35a4-9eda-70e9" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="99020b15-340b-529e-93f7-5c289846fbb4">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Gas" id="88129780-dc61-571b-a2c6-e1f12e01a273" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7">
@@ -948,6 +1103,11 @@
         <modifier type="add" value="Wretched can only take Naval Battlekit" field="error">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="self" childId="05f3-2ee4-36c0-8c25" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="fbae8af5-3e02-50d7-a9e5-5daa5560e73d">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
