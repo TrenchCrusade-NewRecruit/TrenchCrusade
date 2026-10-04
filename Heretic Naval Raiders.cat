@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders Rules" hidden="false" id="4d05-603e-4b5a-aed4">
       <profiles>
@@ -94,6 +94,35 @@
                 </modifier>
               </modifiers>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Drowned Choir" hidden="false" id="66d2abe9-5221-4754-830a-75be41711830">
+              <profiles>
+                <profile name="A Song Within the Deep" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="d76e026a-484a-4794-a7ee-095de20f933b">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Drowned Choir Warbands must include 1-3 Drowned Choristers. In addition, 1 Drowned Chorister must take the Leviathal Chorus upgrade at a cost of 20 ducats. The Drowned Chorister with the Leviathal Chorus upgrade increases its base size to 40mm, has the LEADER and TOUGH Keywords, and replaces their Unholy Hymns ability with the Dread Harmony ability.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Dread Harmony" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="ff14bf14-e1f6-463c-9987-4ad1e3c7aa3a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">All Success Rolls made by enemy models within 8&quot; of a Leviathal Chorus become Risky Success Rolls. There is no additional effect if they are Risky Success Rolls already.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="A Wretched Chorus" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="9e908c22-3996-4512-af19-72ba2b84b018">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Wretched models in a Drowned Choir cost 30 ducats and have a Melee Characteristic of +0 DICE. Wretched models within 8&quot; of any number of Drowned Chorister or Leviathal Chorus models have a Melee Characteristic of +1 DICE instead of +0 DICE.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Mounting Madness" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="9ee06e86-3794-418f-b7f9-cbb0a64decdf">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Increase the range of a Drowned Chorister&apos;s Unholy Hymns Ability by +4&quot; if it is within 8&quot; of another friendly Drowned Chorister or Leviathal Chorus.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="To No Purpose Save Their Own" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="4759cef0-7801-4d5e-a21f-da85f3337047">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Drowned Choir Warbands cannot include Heretic Captains, Abyssal Commandos, Sea Hags, or Anointed Heretic Raiders.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -181,9 +210,19 @@
         </infoLink>
       </infoLinks>
       <modifiers>
+        <modifier type="set" value="0" field="d1fb-6912-8adb-9231">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
         <modifier type="add" value="afcc-5f24-1c7c-63c4" field="category">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="5f1b-34ce-c9d1-0f7a">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -325,6 +364,13 @@
       <infoLinks>
         <infoLink name="Infiltrator" id="ad17-0ef3-1fd4-3877" hidden="false" type="rule" targetId="154d-8072-ef87-e6c1"/>
       </infoLinks>
+      <modifiers>
+        <modifier type="set" value="0" field="3b0e-af52-f8f7-248e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Drowned Chorister" hidden="false" id="c6ae99cd-4268-59eb-8a48-5d9fa83bd640">
       <costs>
@@ -345,6 +391,13 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="40mm" field="73ae-cc17-596e-0481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="92816847-3df0-4cbf-84d2-56599afea0f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
@@ -398,6 +451,13 @@
           <characteristics>
             <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add -1 DICE to Success Rolls taken for enemy models that are within 8&quot; of one or more Choristers.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="92816847-3df0-4cbf-84d2-56599afea0f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <entryLinks>
@@ -411,10 +471,29 @@
         <entryLink import="true" name="Naval Battlekit" hidden="false" id="03021758-b7aa-58cf-8046-726c7684d8cc" type="selectionEntryGroup" targetId="31cb-15a6-6f6b-d677" collapsible="true"/>
       </entryLinks>
       <constraints>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="45bd9408-3628-46be-a718-d88c96345388" includeChildSelections="true"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9f477507-9e5e-5a1b-8518-6cbc891996fd" includeChildSelections="true"/>
       </constraints>
       <infoLinks>
         <infoLink name="Fear" id="6465c8ee-d2aa-5e25-b82c-360122e17bff" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
+        <infoLink name="Tough" id="fc61b43a-6ce1-4045-83da-82603b947640" hidden="true" type="rule" targetId="3c75-701d-e708-1438">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="92816847-3df0-4cbf-84d2-56599afea0f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Leader" id="13e4a73e-95d2-48b6-b9c3-055ad7ad431f" hidden="true" type="rule" targetId="9130-09e0-3351-8c4c">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="92816847-3df0-4cbf-84d2-56599afea0f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -427,8 +506,58 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="1" field="45bd9408-3628-46be-a718-d88c96345388">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="9f477507-9e5e-5a1b-8518-6cbc891996fd">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="914f-0020-0d97-e217" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="92816847-3df0-4cbf-84d2-56599afea0f0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="afb9-39f5-82d9-46ed" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="92816847-3df0-4cbf-84d2-56599afea0f0" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <selectionEntries>
+
+        <selectionEntry type="upgrade" import="true" name="Leviathal Chorus" hidden="true" id="92816847-3df0-4cbf-84d2-56599afea0f0">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+          </costs>
+          <profiles>
+            <profile name="Dread Harmony" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="0739369c-1f28-4282-bed5-d84640cf7fd2">
+              <characteristics>
+                <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">All Success Rolls made by enemy models within 8&quot; of this Leviathal Chorus become Risky Success Rolls. There is no additional effect if they are Risky Success Rolls already.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="03cb21a0-acdf-4ad1-b680-4bbe573cba4d" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cc2d25e-8471-41a0-9fa5-bc90a7e30376" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0edcceb3-96c8-442e-842d-3018a6b53066" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="03cb21a0-acdf-4ad1-b680-4bbe573cba4d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
 
         <selectionEntry type="upgrade" import="true" name="Leviathan Bell" hidden="false" id="abc9e01f-fe23-53fc-862d-60c870d755b5">
           <costs>
@@ -771,6 +900,11 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="2613c11b-68ec-5d0d-b233-b3471adc937e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -1004,6 +1138,11 @@
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="99020b15-340b-529e-93f7-5c289846fbb4">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink name="Gas" id="88129780-dc61-571b-a2c6-e1f12e01a273" hidden="false" type="rule" targetId="2c6e-81c8-6c20-b5b7">
@@ -1059,6 +1198,11 @@
                 <condition type="atLeast" value="1" field="selections" scope="self" childId="4a0e-6f55-3bac-71b1" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="+0 Dice" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
         <profile name="Dark Blessing" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="3481f1eb-46d6-5aff-8293-e0e6536c4bef">
@@ -1108,6 +1252,11 @@
         <modifier type="set" value="0" field="fbae8af5-3e02-50d7-a9e5-5daa5560e73d">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="e41075bf-7b42-4a2f-9bf0-4318e6faa459" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="30" field="8d43-33fd-332d-17a6">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="66d2abe9-5221-4754-830a-75be41711830" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
