@@ -4968,7 +4968,6 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
       </entryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="414f-d9cb-0f92-955c" includeChildSelections="true"/>
-        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7e5e-1444-77e6-7e54" includeChildSelections="true"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup name="Elite Ally" id="3f45-7074-d35b-9022" hidden="false">
