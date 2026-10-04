@@ -881,6 +881,9 @@
           </costs>
         </entryLink>
         <entryLink import="true" name="Flamethrower" hidden="false" id="9702-83fd-8efd-9eaa" type="selectionEntry" targetId="985f-e0c3-b0e9-5f89" sortIndex="5">
+          <entryLinks>
+            <entryLink import="true" name="Bayonet" hidden="false" id="7f2b-2df2-6b61-7db4" type="selectionEntryGroup" targetId="aaf9-7a80-a920-1711" sortIndex="-1"/>
+          </entryLinks>
           <constraints>
             <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="7096-caac-f296-19e9" includeChildSelections="true"/>
           </constraints>
