@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="false">
       <constraints>
@@ -1265,7 +1265,7 @@
         </entryLink>
         <entryLink import="true" name="Troop Flag" hidden="false" id="fa34-05bd-6636-b351" type="selectionEntry" targetId="98cd-8361-8cc4-81ea">
           <costs>
-            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e77d-1a18-7821-a39d" includeChildSelections="true"/>
@@ -3325,6 +3325,36 @@
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Musical Instrument" hidden="true" id="f91c-0e3d-1b74-8a9c" type="selectionEntry" targetId="d6b0-fb63-288a-420a" sortIndex="5">
+          <costs>
+            <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e211-f41b-3c29-2991" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Troop Flag" hidden="true" id="c95d-22eb-975f-91a2" type="selectionEntry" targetId="98cd-8361-8cc4-81ea" sortIndex="6">
+          <costs>
+            <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="1"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c4d1-86a1-3ce9-7e50" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
