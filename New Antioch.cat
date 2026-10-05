@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="24ae-224b-0680-a9bd" hidden="false" collapsible="false">
       <constraints>
@@ -2372,6 +2372,12 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
             <condition type="atLeast" value="1" field="selections" scope="self" childId="50f3-c7bc-63ac-2adc" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="8d43-33fd-332d-17a6"/>
+        <modifier type="decrement" value="1" field="8d43-33fd-332d-17a6">
+          <repeats>
+            <repeat value="1" repeats="1" field="8d43-33fd-332d-17a6" scope="self" childId="16ca-2c9a-0211-97db" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="bc90-d206-2b0d-b743">
@@ -2483,7 +2489,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8d1-8366-57a1-36a0" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="6a47-d2b0-de08-8ab8" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="6a47-d2b0-de08-8ab8" defaultAmount="1" sortIndex="5">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2496,6 +2502,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
                 </profile>
               </profiles>
               <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4c4b-0960-6dd6-dbe8" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0f5-6522-c3e0-5a05" includeChildSelections="false"/>
               </constraints>
               <modifiers>
@@ -3073,6 +3080,7 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Troop" hidden="false" id="0ce3-e1b0-e53e-d8c7" targetId="bd43-ddb1-262d-4489" primary="false"/>
+        <categoryLink name="Golem" hidden="false" id="50c4-012f-df2b-beb3" targetId="c15a-8839-8c4e-c312" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
@@ -3087,6 +3095,11 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="model" childId="820b-8856-fb9c-e9d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="6a47-d2b0-de08-8ab8" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

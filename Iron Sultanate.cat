@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Equipment" id="6fa6-9678-f5af-3bf2" hidden="false">
       <selectionEntries>
@@ -3269,6 +3269,24 @@ This Alchemist cannot have a Medi-kit. Instead, when you Activate this Alchemis
             <condition type="atLeast" value="1" field="selections" scope="self" childId="ec42-1750-48bc-074c" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="c15a-8839-8c4e-c312" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="model" childId="8891-b3fa-58ca-f1fc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="8d43-33fd-332d-17a6">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="model" childId="8891-b3fa-58ca-f1fc" shared="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="8d43-33fd-332d-17a6">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="model" childId="8891-b3fa-58ca-f1fc" shared="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="8d43-33fd-332d-17a6" scope="self" childId="8f94-1e35-3499-7de7" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="02c4-88da-ec78-8a33">
@@ -3429,12 +3447,23 @@ This Alchemist cannot have a Medi-kit. Instead, when you Activate this Alchemis
                 </profile>
               </profiles>
               <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cdb8-5a88-b7dc-ea5f" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="58b0-d51e-449e-2da5" includeChildSelections="false"/>
               </constraints>
               <modifiers>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="f5d7-6c47-430c-2666" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="cdb8-5a88-b7dc-ea5f">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="8891-b3fa-58ca-f1fc" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="1" field="defaultAmount">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="8891-b3fa-58ca-f1fc" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3922,6 +3951,11 @@ Hypnotic Eyes Alchemical Formulas.</characteristic>
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="model" childId="e77a-39f7-7264-9008" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="c251-4b5c-2ba0-82e0" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -7222,6 +7256,17 @@ In addition, any BLOOD MARKER this model gains may not be used to incur penaltie
           </constraints>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Golem" id="23f8-7024-6716-a9c1" hidden="true" type="rule" targetId="d70f-081c-259b-6cb6">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="8891-b3fa-58ca-f1fc" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Pairika" hidden="true" id="a98c-24cc-6885-daaa">
       <costs>
