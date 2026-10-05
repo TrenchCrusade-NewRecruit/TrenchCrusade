@@ -3565,6 +3565,16 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Trench Shield" hidden="false" id="4c21-147f-bfda-0677" type="selectionEntry" targetId="ab45-1e00-df56-dbda" sortIndex="3">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="031e-6f27-2d2e-8ad4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="56e7-b524-24b3-c6d7" includeChildSelections="false"/>
           </constraints>
@@ -3647,7 +3657,7 @@
           <modifiers>
             <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="7fb6-d318-1757-96a6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="4c21-147f-bfda-0677" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
