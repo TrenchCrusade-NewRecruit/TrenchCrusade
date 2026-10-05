@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction Rules" hidden="false" id="0d88-774c-22af-e2fc">
       <profiles>
@@ -57,6 +57,14 @@
                 <modifier type="add" value="Blessed Flock warbands cannot include Anchorite Shrines" field="error"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="4ed5-3209-4bf7-4b02" shared="true" includeChildSelections="true"/></conditions></modifier>
               </modifiers>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Knights of Saint Lazarus" hidden="false" id="a1e1-b2e2-c3e3-d4e4">
+              <profiles>
+                <profile name="Sacred Code" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e5"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Knights of Saint Lazarus Warband must include 1-6 Stigmatic Nuns. It cannot include Lazarist Communicants or Lazarist Castigators, and its models cannot voluntarily take a Retreat ACTION.</characteristic></characteristics></profile>
+                <profile name="Knightly Order" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e6"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Knights of Saint Lazarus Warband must include 1-3 Leper-Knights. Leper-Knights use the Lazarist Castigator Warband entry, but must wear Armour, have a Melee Characteristic of +2 DICE, and replace Whip of God with Knightly Code.</characteristic></characteristics></profile>
+                <profile name="Blessed Armoury" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e7"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Automatic Pistols cost 15 ducats and Great Swords cost 7 Glory. Models in this Warband cannot have Ranged Weapons that cost more than 15 ducats or any Glory.</characteristic></characteristics></profile>
+                <profile name="Followers of Saint Lazarus" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e8"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Knights of Saint Lazarus Warband may choose a Temporal Lord as its Patron in addition to the standard Patron options.</characteristic></characteristics></profile>
+              </profiles>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -73,6 +81,10 @@
             <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">32mm</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="Leper-Knight" field="name"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier>
+            <modifier type="set" value="+2 DICE" field="12e8-ff8c-c933-9eb5"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier>
+          </modifiers>
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
@@ -114,6 +126,11 @@
           <characteristics>
             <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Whip of God: When a Lazarist Castigator makes a Melee Attack they can target a friendly model that is within 1&quot; instead of an enemy model, and can add -1 INJURY DICE to the Injury Roll if they do so. Set aside a D6 each time a Lazarist Castigator attacks a friendly model and takes them Out of Action with a Melee Attack. The next time the Lazarist Castigator&apos;s Warband is forced to take a Morale Check, each D6 that was put aside adds +1 DICE to the roll and is then discarded.</characteristic>
           </characteristics>
+          <modifiers><modifier type="set" value="true" field="hidden"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers>
+        </profile>
+        <profile name="Knightly Code" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="true" id="a1e1-b2e2-c3e3-d4e9">
+          <characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">When a Leper-Knight makes a Melee Attack that takes an enemy model Out of Action, you can remove 1 BLOOD MARKER from the Leper-Knight or a friendly model within 3&quot; of it. If the enemy model had the ELITE Keyword, you can place 1 BLESSING MARKER beside the Leper-Knight instead of removing a BLOOD MARKER.</characteristic></characteristics>
+          <modifiers><modifier type="set" value="false" field="hidden"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers>
         </profile>
       </profiles>
       <constraints>
@@ -139,8 +156,11 @@
       </costs>
       <modifiers>
         <modifier type="set" value="3" field="c1a5-7d3e-4b90-2004"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="1e805232-b08b-4b7f-b617-969e6bb9cf0f" shared="true" includeChildSelections="true"/></conditions></modifier>
+        <modifier type="set" value="3" field="c1a5-7d3e-4b90-2004"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier>
+        <modifier type="set" value="Leper-Knight" field="name"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier>
         <modifier type="set" value="1" field="27a41677-613b-4547-8874-f32c9270169d"><conditionGroups><conditionGroup type="and"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="1e805232-b08b-4b7f-b617-969e6bb9cf0f" shared="true" includeChildSelections="true"/><condition type="atMost" value="0" field="selections" scope="roster" childId="d2b6-8e4f-5c01-2a73" shared="true" includeChildSelections="true"/></conditions></conditionGroup></conditionGroups></modifier>
         <modifier type="increment" value="1" field="27a41677-613b-4547-8874-f32c9270169d"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="1e805232-b08b-4b7f-b617-969e6bb9cf0f" shared="true" includeChildSelections="true"/></conditions><repeats><repeat value="2" repeats="1" field="selections" scope="roster" childId="d2b6-8e4f-5c01-2a73" shared="true" roundUp="true" includeChildSelections="true"/></repeats></modifier>
+        <modifier type="set" value="1" field="27a41677-613b-4547-8874-f32c9270169d"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier>
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
@@ -263,12 +283,14 @@
       </costs>
       <modifiers>
         <modifier type="set" value="6" field="d2b6-8e4f-5c01-3004"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="1e805232-b08b-4b7f-b617-969e6bb9cf0f" shared="true" includeChildSelections="true"/></conditions></modifier>
+        <modifier type="set" value="0" field="d2b6-8e4f-5c01-3004"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier>
         <modifier type="set" value="1" field="3bca265d-a429-469e-81c1-868bc833b073"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="1e805232-b08b-4b7f-b617-969e6bb9cf0f" shared="true" includeChildSelections="true"/></conditions></modifier>
         <modifier type="set" value="false" field="hidden">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="0d88-774c-22af-e2fc" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="true" field="hidden"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier>
       </modifiers>
       <modifierGroups>
         <modifierGroup type="and">
@@ -430,8 +452,8 @@
         <profile name="Agile" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="239a-64ac-6630-4a01"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Agile: Add +1 DICE to the Risky Success Roll when a Stigmatic Nun Climbs, Jumps, or makes a Diving Charge, or takes a Dash ACTION.</characteristic></characteristics></profile>
         <profile name="Blessed Stigmata" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="0e04-c99e-1e80-4a01"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Blessed Stigmata: Each time you remove a BLOOD MARKER from a Stigmatic Nun due to the REGENERATE 1 Keyword, place 1 BLESSING MARKER next to the Stigmatic Nun.</characteristic></characteristics></profile>
       </profiles>
-      <constraints><constraint type="max" value="4" field="selections" scope="roster" shared="true" id="4ed5-3209-4bf7-4a01" includeChildSelections="true"/></constraints>
-      <modifiers><modifier type="set" value="2" field="4ed5-3209-4bf7-4a01"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="1e805232-b08b-4b7f-b617-969e6bb9cf0f" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers>
+      <constraints><constraint type="min" value="0" field="selections" scope="roster" shared="true" id="a1e1-b2e2-c3e3-d4ea" includeChildSelections="true"/><constraint type="max" value="4" field="selections" scope="roster" shared="true" id="4ed5-3209-4bf7-4a01" includeChildSelections="true"/></constraints>
+      <modifiers><modifier type="set" value="2" field="4ed5-3209-4bf7-4a01"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="1e805232-b08b-4b7f-b617-969e6bb9cf0f" shared="true" includeChildSelections="true"/></conditions></modifier><modifier type="set" value="6" field="4ed5-3209-4bf7-4a01"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier><modifier type="set" value="1" field="a1e1-b2e2-c3e3-d4ea"><conditions><condition type="atLeast" value="1" field="selections" scope="roster" childId="a1e1-b2e2-c3e3-d4e4" shared="true" includeChildSelections="true"/></conditions></modifier></modifiers>
       <categoryLinks>
         <categoryLink targetId="afb7-d895-f4b4-73f3" id="1104-c3e9-7172-4a01" primary="false" name="Pilgrim"/>
         <categoryLink targetId="bd43-ddb1-262d-4489" id="a28a-9034-856e-4a01" primary="true" name="Troop"/>
