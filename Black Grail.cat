@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="14" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="false">
       <constraints>
@@ -3535,6 +3535,16 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Trench Shield" hidden="false" id="4c21-147f-bfda-0677" type="selectionEntry" targetId="ab45-1e00-df56-dbda" sortIndex="3">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="031e-6f27-2d2e-8ad4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <constraints>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="56e7-b524-24b3-c6d7" includeChildSelections="false"/>
           </constraints>
@@ -3617,7 +3627,7 @@
           <modifiers>
             <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="self" childId="7fb6-d318-1757-96a6" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="4c21-147f-bfda-0677" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
