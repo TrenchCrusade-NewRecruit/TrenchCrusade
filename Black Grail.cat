@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="false">
       <constraints>
@@ -3789,7 +3789,15 @@
       <infoLinks>
         <infoLink name="Tough" id="205e-e73e-3afc-02f7" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
         <infoLink name="Fear" id="1fa6-2bad-501f-2ce1" hidden="false" type="rule" targetId="8c95-78a1-d88d-5f8e"/>
-        <infoLink name="Leader" id="96cf-91af-2279-837e" hidden="false" type="rule" targetId="9130-09e0-3351-8c4c"/>
+        <infoLink name="Leader" id="96cf-91af-2279-837e" hidden="false" type="rule" targetId="9130-09e0-3351-8c4c">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Strong" id="2f57-b22f-c807-90c5" hidden="false" type="rule" targetId="6297-d0e0-1935-5cfd"/>
         <infoLink name="Negate [Keyword]" id="95e3-f976-5b6e-cda3" hidden="false" type="rule" targetId="47f9-6914-172d-26a9"/>
       </infoLinks>
@@ -3798,6 +3806,16 @@
         <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7385-348a-8951-199e" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
       <modifiers>
+        <modifier type="set" value="Great Maw" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" value="afb9-39f5-82d9-46ed" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
         <modifier type="set" value="0" field="14da-6cb8-f66e-7ad6">
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="fdaf-1b5e-0348-3ad9" shared="true" includeChildSelections="true" includeChildForces="true"/>
@@ -3810,6 +3828,23 @@
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="0f19-7c79-420e-13bf" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true" childName="The Great Hunger"/>
               </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true" childName="The Great Hunger"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1000" field="limit::8d43-33fd-332d-17a6" scope="roster" childId="any" shared="true"/>
+                    <condition type="atLeast" value="1000" field="8d43-33fd-332d-17a6" scope="roster" childId="any" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
