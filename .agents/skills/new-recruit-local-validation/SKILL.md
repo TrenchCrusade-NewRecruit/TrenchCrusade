@@ -14,8 +14,10 @@ local checkout in New Recruit, never the remotely hosted catalogue.
    official source, locate the XML which implements the behaviour, and parse
    the changed XML.
 2. Confirm New Recruit is using the exact checkout and branch being tested.
-   Select the local game source, normally displayed as `Trench Crusade (local)`.
-   Do not treat a similarly named remote game as evidence for a local change.
+   Select the local game source, normally displayed as `Trench Crusade (local)`,
+   and make sure its top-bar hot-reload control is enabled. With hot reload
+   enabled, New Recruit observes changes in the local checkout; do not treat a
+   similarly named remote game as evidence for a local change.
 3. If the local source does not exist, open New Recruit's game-management or
    import view and use its local/import control (in some versions this is
    labelled **Select file**). Select `Trench Crusade.gst` from the checkout, or
@@ -23,9 +25,10 @@ local checkout in New Recruit, never the remotely hosted catalogue.
    The source must include the root `Trench Crusade.gst` and its accompanying
    `.cat` files. Ask the user before interacting with a file picker or granting
    folder access.
-4. Reload the local source after changing its data and confirm the changed
-   faction, entry, or configuration is present before testing. Use a fresh list
-   when a prior list could retain stale selections.
+4. After changing local data, let hot reload apply the change and validate with
+   a fresh list. Existing lists can retain stale selection state. Do not
+   re-import the source or use the file picker just to apply an XML edit; do so
+   only if the local source is missing or genuinely broken.
 
 Keep any temporary source setup reversible. Do not overwrite the user's
 checkout or leave copied test data in place after validation.
