@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Equipment" id="6fa6-9678-f5af-3bf2" hidden="false">
       <selectionEntries>
@@ -5361,7 +5361,7 @@ Hypnotic Eyes Alchemical Formulas.</characteristic>
             </modifier>
             <modifier type="set" value="Kavass" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="2bad-28de-8cb2-398d" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" value="+0 Dice" field="12e8-ff8c-c933-9eb5">
@@ -5446,7 +5446,7 @@ Hypnotic Eyes Alchemical Formulas.</characteristic>
         </modifier>
         <modifier type="set" value="Kavass" field="name">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="c2b1-d49e-937b-2f87" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="2bad-28de-8cb2-398d" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
