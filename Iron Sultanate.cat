@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="15" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="72ab-daa4-80ee-e9a5" name="Iron Sultanate" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Equipment" id="6fa6-9678-f5af-3bf2" hidden="false">
       <selectionEntries>
@@ -2640,7 +2640,7 @@ Once a Ranged Attack has been made with this weapon, It cannot be used again.</c
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Reinforced Armour" hidden="false" id="c60a-0cd3-a0a3-3b3e" type="selectionEntry" targetId="a535-4fb6-c587-691a" sortIndex="2">
+        <entryLink import="true" name="Reinforced Armour" hidden="true" id="c60a-0cd3-a0a3-3b3e" type="selectionEntry" targetId="a535-4fb6-c587-691a" sortIndex="2">
           <costs>
             <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
           </costs>
