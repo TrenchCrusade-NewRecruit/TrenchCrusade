@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Campaign Rules" hidden="false" id="7346-84e3-dbbb-296d" defaultAmount="1">
       <constraints>
@@ -112,6 +112,7 @@
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6941-ec54-3001-8288" shared="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="44b9-e92b-2dc0-6820" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6497-8a39-4f5c-9873" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
