@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d54d-055d-bbc0-a20f" name="Trench Pilgrims" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="43b1-aa6a-2357-1613" hidden="false" collapsible="false">
       <constraints>
@@ -2014,6 +2014,12 @@ Additionally, a friendly model in base to base contact with a model equipped wit
             <condition type="atLeast" value="1" field="selections" scope="self" childId="aaa1-a1ca-519e-c2f9" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="8d43-33fd-332d-17a6"/>
+        <modifier type="decrement" value="1" field="8d43-33fd-332d-17a6">
+          <repeats>
+            <repeat value="1" repeats="1" field="8d43-33fd-332d-17a6" scope="self" childId="786d-034d-a03f-b3f5" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8e45-5a5a-379e-22ce">
@@ -2124,7 +2130,7 @@ Additionally, a friendly model in base to base contact with a model equipped wit
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43be-bd63-9048-b863" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="dc0f-0e6f-1bc9-1261" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="dc0f-0e6f-1bc9-1261" defaultAmount="1" sortIndex="5">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -2137,6 +2143,7 @@ Additionally, a friendly model in base to base contact with a model equipped wit
                 </profile>
               </profiles>
               <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="765d-bf46-d415-1b70" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4019-ba79-55d0-42ea" includeChildSelections="false"/>
               </constraints>
               <modifiers>
@@ -2552,6 +2559,7 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Troop" hidden="false" id="c9a3-f9bc-c1f6-dd44" targetId="bd43-ddb1-262d-4489" primary="false"/>
+        <categoryLink name="Golem" hidden="false" id="4d49-ce85-0d2c-53ba" targetId="c15a-8839-8c4e-c312" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
@@ -2566,6 +2574,11 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="model" childId="c97f-dd97-35b1-86ab" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="dc0f-0e6f-1bc9-1261" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>

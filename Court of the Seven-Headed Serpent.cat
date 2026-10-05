@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpent" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="44b9-e92b-2dc0-6820" name="Court of the Seven-Headed Serpent" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="6" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="a774-f5b9-3fd9-7a0b" hidden="false" collapsible="false">
       <constraints>
@@ -3460,6 +3460,12 @@ A Sorcerer cannot purchase both Event horizon and Burning Inferno.</characterist
             <condition type="atLeast" value="1" field="selections" scope="self" childId="101f-2c0b-c1a9-127e" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="8d43-33fd-332d-17a6"/>
+        <modifier type="decrement" value="1" field="8d43-33fd-332d-17a6">
+          <repeats>
+            <repeat value="1" repeats="1" field="8d43-33fd-332d-17a6" scope="self" childId="a3ca-f5ec-eb73-bae8" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <profiles>
         <profile name="Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="2900-bb42-dc77-e352">
@@ -3570,7 +3576,7 @@ A Sorcerer cannot purchase both Event horizon and Burning Inferno.</characterist
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7dab-7760-f51f-b28d" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="dc6d-d5d5-6323-e6c3" sortIndex="5">
+            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="dc6d-d5d5-6323-e6c3" defaultAmount="1" sortIndex="5">
               <costs>
                 <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
                 <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
@@ -3583,6 +3589,7 @@ A Sorcerer cannot purchase both Event horizon and Burning Inferno.</characterist
                 </profile>
               </profiles>
               <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="833e-8e08-2ff7-aea8" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="39d9-a297-d086-71e4" includeChildSelections="false"/>
               </constraints>
               <modifiers>
@@ -4039,6 +4046,7 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
       </selectionEntryGroups>
       <categoryLinks>
         <categoryLink name="Troop" hidden="false" id="f581-b3c2-a2d2-c002" targetId="bd43-ddb1-262d-4489" primary="false"/>
+        <categoryLink name="Golem" hidden="false" id="a832-d158-7bbd-f305" targetId="c15a-8839-8c4e-c312" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
@@ -4053,6 +4061,11 @@ In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has 
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="model" childId="d0fc-afe3-d595-8b26" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="model" childId="dc6d-d5d5-6323-e6c3" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
