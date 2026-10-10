@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="16" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0b26-15c1-cebd-0077" name="Black Grail" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="4" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="4f10-6941-6de8-d8a6" hidden="false" collapsible="false">
       <constraints>
@@ -3170,6 +3170,13 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e72-36fe-21b7-986d" includeChildSelections="false"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" value="Ravenous" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <profiles>
                 <profile name="Thrall" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="93f3-a076-a503-e864">
                   <characteristics>
@@ -3196,6 +3203,16 @@
                       </conditions>
                     </modifier>
                     <modifier type="set" value="+0 Dice" field="12e8-ff8c-c933-9eb5">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="-" field="1a4f-d2cd-c405-6200">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="25mm or 32mm" field="73ae-cc17-596e-0481">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true"/>
                       </conditions>
@@ -3252,6 +3269,13 @@
               <infoLinks>
                 <infoLink name="Flying" id="fe45-b51e-d06b-4ffc" hidden="false" type="rule" targetId="4b63-016a-bd78-52fd"/>
               </infoLinks>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3262,9 +3286,9 @@
             <categoryLink targetId="d935-8238-a3f7-8ab0" id="d37c-f11f-9e1c-1338" primary="false" name="Negate Gas"/>
           </categoryLinks>
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="Ravenous" field="name">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" childName="The Great Hunger" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4ae9-6e62-b943-faeb" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
