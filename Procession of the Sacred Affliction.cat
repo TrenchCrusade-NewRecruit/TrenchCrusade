@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction Rules" hidden="false" id="0d88-774c-22af-e2fc">
       <profiles>
@@ -371,6 +371,16 @@
             <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
           </characteristics>
           <modifiers>
+            <modifier type="increment" value="1" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="a947-4d4f-bf77-cc21" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Martyr Penitent" field="name">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="a947-4d4f-bf77-cc21" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="32mm" field="73ae-cc17-596e-0481">
               <conditionGroups>
                 <conditionGroup type="or">
@@ -450,6 +460,25 @@
             <entryLink import="true" name="Wrath of God" hidden="false" id="4ed5-3209-4bf7-4e0c" type="selectionEntry" targetId="1a8c-d998-b42b-9e8b"/>
           </entryLinks>
           <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Martyr Penitent" hidden="false" id="a947-4d4f-bf77-cc21">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b035-a6a8-bb1e-6d8f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="45"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Beyond Death" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="d6f1-54e3-8c9b-7a2d">
+                  <characteristics>
+                    <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Ability</characteristic>
+                    <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
+                    <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-</characteristic>
+                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Add -1 INJURY DICE to Injury Rolls for this model. Martyrdom Pills have no effect on a Martyr Penitent.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Zealot Strength" hidden="false" id="0d80-57cc-d681-4dcd">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38df-0661-0df8-4a01" includeChildSelections="false"/>
@@ -466,6 +495,13 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifiers>
+        <modifier type="set" value="Martyr Penitent" field="name">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="a947-4d4f-bf77-cc21" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stigmatic Nun" hidden="false" id="a28a-9034-856e-4b60">
       <profiles>
