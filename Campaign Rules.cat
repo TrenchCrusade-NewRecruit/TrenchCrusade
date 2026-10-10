@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Campaign Rules" hidden="false" id="7346-84e3-dbbb-296d" defaultAmount="1">
       <constraints>
@@ -174,6 +174,7 @@
                             <conditionGroup type="or">
                               <conditions>
                                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6941-ec54-3001-8288" shared="true"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6497-8a39-4f5c-9873" shared="true"/>
                                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="3a0b-d655-c557-84c1" shared="true" includeChildSelections="true" includeChildForces="true"/>
                               </conditions>
                             </conditionGroup>
@@ -200,6 +201,25 @@
                             <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
                             <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
                             <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Your Patron is Mammon, the Prince of Greed, the Treasurer of Hell, and the King of Fools. He appears as a golden-skinned king on an opulent throne, with black scorch marks tarnishing his splendour. He is the most popular patron amongst mortals.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="War Priest Charon" hidden="true" id="2e2d-6f4d-edc0-4f58">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6497-8a39-4f5c-9873" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <profiles>
+                        <profile name="War Priest Charon" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="97df-fd27-0143-4a0d">
+                          <characteristics>
+                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Your Patron is War Priest Charon, the Apostate of Éire. A mortal bound by the most terrible of oaths, he ferries the damned across rivers of blood in return for the souls of the living.</characteristic>
                           </characteristics>
                         </profile>
                       </profiles>
@@ -3367,6 +3387,89 @@ The saint guides your troops before each battle. The model with the skull gains 
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="c9f6-a7c1-cd75-06fe" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="War Priest Charon" id="9b5d-8b49-1f8e-4440" hidden="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="A Master of Death" hidden="false" id="ae16-0dc3-ff19-4bd5" sortIndex="1">
+              <profiles>
+                <profile name="A Master of Death" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="d66d-86a0-444d-4ae3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A model with this Skill adds AUTOMATIC 2 to its attacks with Ranged Weapons while within Short Range. If the weapon already has the AUTOMATIC Keyword, add 1 to its attacks instead. A Warband can have only one model with this Skill.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3cbc-dd13-de9c-463b" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fire and Fear" hidden="false" id="e73b-9934-f3b1-4974" sortIndex="2">
+              <profiles>
+                <profile name="Fire and Fear" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="3805-bda3-2f06-409e">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Pick one Ranged Skill and give it to a model with this Skill.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d3-921d-9b76-41da" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fonts of Joyous Wickedness" hidden="false" id="eec8-cf1e-6803-4f43" sortIndex="3">
+              <profiles>
+                <profile name="Fonts of Joyous Wickedness" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="dd46-c2a2-4aa0-4ad0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A model with this Skill has the Lucky Exploration Skill. A Warband can have only one model with this Skill.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a173-faa1-f05b-42d1" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="No Longer Cowed Supplicants" hidden="false" id="5637-5afd-973a-425c" sortIndex="4">
+              <profiles>
+                <profile name="No Longer Cowed Supplicants" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="eabb-ab42-2a8a-4ac3">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Treat a Down result on the Injury Chart for a model with this Skill as a Minor Wound instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a73d-1398-f092-4a69" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="On Wings of Blooded Iron" hidden="false" id="a878-a270-4a82-487d" sortIndex="5">
+              <profiles>
+                <profile name="On Wings of Blooded Iron" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="c221-7d91-6567-4bc4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">ACTION: A model with this Skill can take an On Wings of Blooded Iron ACTION. Take a Risky Success Roll. On a Failure, nothing happens and the model&apos;s Activation ends. On a Success or Critical Success, choose a friendly model within 8&quot; of the model, including itself. That model may Move or Retreat as if it had a 8&quot;/Flying Movement Characteristic, but it cannot Charge. Then place 1 BLOOD MARKER next to the model with this Skill.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0d6-66cc-bfc8-4eeb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="We Are the Storm" hidden="false" id="858e-c318-242c-4b3e" sortIndex="6">
+              <profiles>
+                <profile name="We Are the Storm" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="403a-2eb6-290a-4f2c">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">After deployment, a model with this Skill may move D6&quot;. It cannot finish this move within 1&quot; of an enemy model.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fadb-c890-d4bc-4e21" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2e2d-6f4d-edc0-4f58" shared="true" includeChildSelections="true" includeChildForces="true"/>
               </conditions>
             </modifier>
           </modifiers>
