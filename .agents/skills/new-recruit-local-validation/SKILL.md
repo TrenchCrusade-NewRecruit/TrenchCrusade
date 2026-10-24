@@ -76,6 +76,37 @@ checkout or leave copied test data in place after validation.
    interpretation, leave the New Recruit list visible and show the relevant
    list state before continuing.
 
+## Explain results and handle issues
+
+- In a public issue or PR, explain what a player can verify: the warband and
+  exact unit, upgrades, weapons, and equipment selected in a New Recruit
+  roster; the relevant error badge or validation message; and how the nearest
+  control case behaved. Include the current official rulebook version and page
+  when the conclusion depends on a rule. Keep checkout paths, branch names,
+  `NR-VALIDATE-` list names, and hot-reload setup in internal notes unless
+  they are necessary to explain a limitation.
+- Distinguish the published catalogue from a proposed change without asking
+  external readers to understand the local import. For a baseline, say that
+  the roster was tested with the current published Trench Crusade data in New
+  Recruit. For a fix, say that the same roster was tested in New Recruit with
+  the updated catalogue; do not imply the published catalogue is fixed before
+  the change reaches it.
+- When a screenshot makes the result easier to check, attach or link one that
+  visibly shows the exact selections and validation state. Label before and
+  after images by which catalogue state they show, and do not crop away a
+  relevant error or context that changes the conclusion.
+- Keep a verified bug open while its fix is only proposed. Link a fixing PR
+  using the repository's required `Fixes #...` syntax; do not manually close
+  the issue when opening the PR. Check the issue state after merge; if manual
+  closure is still needed, verify the published result first. Close a report
+  without a fixing PR only when the current official rule and an exact
+  published-system roster test support a clear resolution, such as
+  already-correct behaviour, a duplicate root cause, or a superseded rule.
+  An unverified or approximate test is not grounds for closure.
+- Before posting a proposed closing explanation or manually closing an issue,
+  show the user the issue number, evidence, and exact draft comment. Wait for
+  their approval; preserve any issue they want to check themselves.
+
 ## Finish cleanly
 
 - Report the regular-source reproduction separately from the local-source
