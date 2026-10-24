@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="c421-32f4-581e-9fb6" name="Procession of the Sacred Affliction" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="8" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Procession of the Sacred Affliction Rules" hidden="false" id="0d88-774c-22af-e2fc">
       <profiles>
@@ -61,7 +61,7 @@
               <profiles>
                 <profile name="Sacred Code" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e5"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Knights of Saint Lazarus Warband must include 1-6 Stigmatic Nuns. It cannot include Lazarist Communicants or Lazarist Castigators, and its models cannot voluntarily take a Retreat ACTION.</characteristic></characteristics></profile>
                 <profile name="Knightly Order" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e6"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Knights of Saint Lazarus Warband must include 1-3 Leper-Knights. Leper-Knights use the Lazarist Castigator Warband entry, but must wear Armour, have a Melee Characteristic of +2 DICE, and replace Whip of God with Knightly Code.</characteristic></characteristics></profile>
-                <profile name="Blessed Armoury" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e7"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Automatic Pistols cost 15 ducats and Great Swords cost 7 Glory. Models in this Warband cannot have Ranged Weapons that cost more than 15 ducats or any Glory.</characteristic></characteristics></profile>
+                <profile name="Blessed Armoury" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e7"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Automatic Pistols cost 15 ducats and Great Swords cost 7 ducats. Models in this Warband cannot have Ranged Weapons that cost more than 15 ducats or any Glory.</characteristic></characteristics></profile>
                 <profile name="Followers of Saint Lazarus" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a1e1-b2e2-c3e3-d4e8"><characteristics><characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Knights of Saint Lazarus Warband may choose a Temporal Lord as its Patron in addition to the standard Patron options.</characteristic></characteristics></profile>
               </profiles>
             </selectionEntry>
