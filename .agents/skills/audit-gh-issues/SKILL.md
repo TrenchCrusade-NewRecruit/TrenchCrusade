@@ -29,13 +29,17 @@ rule authority, XML revisions, validation, PR labels, and Git conventions.
   constraint, modifier, condition, or link. If the rule is absent or changed,
   investigate obsolete catalogue data instead of assuming the report is wrong.
 - Reproduce the reporter's exact selections in the published `Trench Crusade`
-  game in New Recruit. Inspect validation badges and details; compare the
-  nearest legal or illegal control. Follow the referenced validation skill for
-  source selection, screenshots, and after-change tests. For a UI or platform
-  report, verify the visible behaviour and which component owns it. When an
+  game in a browser. Inspect validation badges and details; compare the nearest
+  legal or illegal control. Follow the referenced validation skill for source
+  selection, screenshots, and after-change tests. For a UI or platform report,
+  verify the published browser behaviour and which component owns it. When an
   action should navigate, inspect newly opened tabs or windows as well as the
-  original page. A report specific to the Android or iOS app needs evidence on
-  that platform before dismissal; desktop browser success is only a control.
+  original page. Use the published browser result to decide whether this
+  catalogue repository needs a fix, even when the report came from a mobile
+  app. If the reported defect does not reproduce there and has no catalogue
+  cause, recommend closing it with the observed browser result and, for an
+  app-owned feature, the appropriate New Recruit support path. Do not claim to
+  have tested Android or iOS unless that platform was actually tested.
 - Isolate the reported rule from unrelated roster errors. Satisfy required
   selections, then inspect the badge's error text on the affected model or
   option. A roster-level badge alone does not prove the reported defect.
@@ -44,8 +48,9 @@ rule authority, XML revisions, validation, PR labels, and Git conventions.
   the published source, and verify the badge on the affected model. The source
   selector on a shared page may reflect the viewer's currently selected game.
 - Mark a claim **unverified** when the exact configuration, current rule, or
-  runtime behaviour cannot be established. Explain the missing evidence and
-  keep the issue open; do not turn an approximate test into a dismissal.
+  published browser behaviour cannot be established. Explain the missing
+  evidence and keep the issue open; do not turn an approximate test into a
+  dismissal.
 
 ## Act on the finding
 
