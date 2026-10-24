@@ -1,0 +1,3 @@
+interface:
+  display_name: "Audit GitHub Issues"
+  short_description: "Verify roster issues and report fix or closure actions"
