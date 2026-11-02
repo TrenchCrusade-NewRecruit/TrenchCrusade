@@ -40,9 +40,14 @@ rule authority, XML revisions, validation, PR labels, and Git conventions.
   cause, recommend closing it with the observed browser result and, for an
   app-owned feature, the appropriate New Recruit support path. Do not claim to
   have tested Android or iOS unless that platform was actually tested.
-- Isolate the reported rule from unrelated roster errors. Satisfy required
-  selections, then inspect the badge's error text on the affected model or
-  option. A roster-level badge alone does not prove the reported defect.
+- Isolate the reported rule from unrelated roster errors. Before finding that
+  an error does not reproduce or recommending closure, record the exact
+  selections and the affected model or option's visible badge state before
+  changing selections. If a badge is visible, open it and record its message;
+  a roster-level badge alone does not identify the cause. If accessibility or
+  DOM text shows no badge, inspect the rendered UI or a screenshot before
+  declaring the case valid. An unchecked option or missing error text is not
+  proof of validity.
 - Treat a shared roster page as evidence of selections, not of current
   validation. Rebuild the relevant force in a fresh `NR-VALIDATE-` list using
   the published source, and verify the badge on the affected model. The source
