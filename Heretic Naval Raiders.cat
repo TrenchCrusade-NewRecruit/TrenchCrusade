@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders Rules" hidden="false" id="4d05-603e-4b5a-aed4">
       <profiles>
@@ -1297,6 +1297,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink name="Block" id="8e2a-1dd1-dae4-4b60" hidden="false" type="rule" targetId="cdfd-aca9-c615-20e1"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink targetId="f87d-5ea3-e505-6a9f" id="bf29-c80a-5d21-bf63" primary="false" name="Cumbersome"/>
           </categoryLinks>

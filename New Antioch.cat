@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="707d-5bdf-586e-f704" name="New Antioch" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="10" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Weapons" id="24ae-224b-0680-a9bd" hidden="false" collapsible="false">
       <constraints>
@@ -715,6 +715,7 @@ For the purpose of Battle Demolition on Combat Engineers, this item counts as a 
             </profile>
           </profiles>
           <infoLinks>
+            <infoLink name="Block" id="a12b-947f-6c8e-4b0e" hidden="false" type="rule" targetId="cdfd-aca9-c615-20e1"/>
             <infoLink name="Critical" id="6db5-a03a-0762-e3c5" hidden="false" type="rule" targetId="7c40-254f-6d33-854c"/>
             <infoLink name="Cumbersome" id="82ce-11e4-4a07-a15b" hidden="false" type="rule" targetId="5613-c861-daeb-156a"/>
             <infoLink name="Heavy" id="1d7d-9d21-f545-812c" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
