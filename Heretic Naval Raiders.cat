@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="6497-8a39-4f5c-9873" name="Heretic Naval Raiders" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="1" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Heretic Naval Raiders Rules" hidden="false" id="4d05-603e-4b5a-aed4">
       <profiles>
@@ -157,7 +157,7 @@
                 </modifier>
                 <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="9f01f9f7-11c4-45fb-9669-ccfd54464e70" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
@@ -166,7 +166,7 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f743ee60-6c51-455a-b847-a10facb2f525" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -407,7 +407,7 @@
                 </modifier>
                 <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="9f01f9f7-11c4-45fb-9669-ccfd54464e70" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
@@ -416,7 +416,7 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f743ee60-6c51-455a-b847-a10facb2f525" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -640,7 +640,7 @@
                 </modifier>
                 <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="9f01f9f7-11c4-45fb-9669-ccfd54464e70" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
@@ -649,7 +649,7 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f743ee60-6c51-455a-b847-a10facb2f525" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -986,7 +986,7 @@
                 </modifier>
                 <modifier type="set" value="-1" field="5de9-d70e-9021-6f71">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="self" childId="05b8-022c-d235-e358" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="self" childId="9f01f9f7-11c4-45fb-9669-ccfd54464e70" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" value="-2" field="5de9-d70e-9021-6f71">
@@ -995,7 +995,7 @@
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="a6fb-9aa2-1030-b5bf" shared="true" includeChildSelections="true"/>
                         <condition type="atLeast" value="1" field="selections" scope="self" childId="6f0b-f2e8-3e60-f596" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="self" childId="7070-bb46-c76d-9c48" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="f743ee60-6c51-455a-b847-a10facb2f525" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
