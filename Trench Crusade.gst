@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="18" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="sys-4f3d-c5c9-7df1-ad01" name="Trench Crusade" battleScribeVersion="2.03" authorName="Fawkstrot" authorUrl="https://github.com/Fawkstrot11" revision="19" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <categoryEntries>
     <categoryEntry name="Artificial" id="4180-5377-2d83-48ba" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
     <categoryEntry name="Elite" id="3de0-192c-3ec2-51be" hidden="false" publicationId="c658-4a10-e1fe-befc"/>
@@ -253,6 +253,7 @@ MARKERS caused by the Keyword FIRE.</description>
   </sharedRules>
   <publications>
     <publication name="Playtest Rules 1.5" id="c658-4a10-e1fe-befc" hidden="false" shortName="PT1.5" publisherUrl="https://static1.squarespace.com/static/637c0a5adafeb04f70309b99/t/6738d89f383e092b140a808f/1731778725409/Trench+Crusade+Rules+v1.5+%283%29.pdf"/>
+    <publication name="Warbands of Trench Crusade 1.0.2" id="bfa8-849b-395b-c90c" hidden="false" shortName="Warbands 1.0.2" publisherUrl="https://www.trenchcrusade.com/app/uploads/2026/09/Warbands-of-Trench-Crusade.pdf"/>
   </publications>
   <sharedProfiles>
     <profile name="Automatic Rifle" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="c35c-a506-683d-6c3f" publicationId="c658-4a10-e1fe-befc" page="109">
@@ -559,14 +560,14 @@ MARKERS caused by the Keyword FIRE.</description>
         <characteristic name="Rules" typeId="4834-43a9-1c93-9062">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="2558-23f8-cfa8-40f4" publicationId="c658-4a10-e1fe-befc" page="117">
+    <profile name="Machine Armour" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="2558-23f8-cfa8-40f4" publicationId="bfa8-849b-395b-c90c" page="26">
       <characteristics>
         <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Armour</characteristic>
         <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
         <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-3 INJURY MODIFIER</characteristic>
         <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Change the base size of a model that has Machine Armour to 40mm unless it is already 40mm or larger. In addition, a model with Machine Armour cannot be equipped with a Trench Shield and has a Charge Bonus of D3&quot; instead of D6&quot;.
 
-- Standfast: When a model that has Machine Armour suffers a Down result on the Injury table, it is treated as a Minor Wound result instead.</characteristic>
+- Standfast: When a model that has Machine Armour suffers a Down result on the Injury table, it is treated as a Minor Hit result instead.</characteristic>
       </characteristics>
     </profile>
     <profile name="Standard Armour" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="6fa6-650d-4136-bc70" publicationId="c658-4a10-e1fe-befc" page="117">
