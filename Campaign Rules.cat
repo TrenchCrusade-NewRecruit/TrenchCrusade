@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="11" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="ba52-3616-d7f9-8d0c" name="Campaign Rules" gameSystemId="sys-4f3d-c5c9-7df1-ad01" gameSystemRevision="13" revision="12" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="upgrade" import="true" name="Campaign Rules" hidden="false" id="7346-84e3-dbbb-296d" defaultAmount="1">
       <constraints>
@@ -2200,6 +2200,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                             <conditionGroup type="and">
                               <conditions>
                                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c421-32f4-581e-9fb6" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -2332,6 +2333,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                               <conditions>
                                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
                                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
+                                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c421-32f4-581e-9fb6" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -2540,6 +2542,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                             <conditionGroup type="and">
                               <conditions>
                                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c421-32f4-581e-9fb6" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -2646,6 +2649,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                               <conditions>
                                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
                                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c421-32f4-581e-9fb6" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -2679,6 +2683,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                                   <conditions>
                                     <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
                                     <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
+                                    <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c421-32f4-581e-9fb6" shared="true"/>
                                   </conditions>
                                 </conditionGroup>
                               </conditionGroups>
@@ -2811,6 +2816,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                             <conditionGroup type="and">
                               <conditions>
                                 <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                <condition type="notInstanceOf" value="1" field="selections" scope="primary-catalogue" childId="c421-32f4-581e-9fb6" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
